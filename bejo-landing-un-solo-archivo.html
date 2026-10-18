@@ -1,0 +1,1222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bejo Ibérica · Semillas hortícolas para el agricultor profesional</title>
+<meta name="description" content="Encuentra la variedad de semilla hortícola que encaja con tu zona y tu ciclo, y habla directamente con tu técnico de zona de Bejo Ibérica. Catálogo general 2026–2028.">
+<meta name="theme-color" content="#43B02A">
+<link rel="canonical" href="https://www.bejo.es/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_ES">
+<meta property="og:site_name" content="Bejo Ibérica">
+<meta property="og:title" content="Bejo Ibérica · Semillas hortícolas para el agricultor profesional">
+<meta property="og:description" content="Encuentra la variedad que encaja con tu zona y tu ciclo, y habla directamente con tu técnico.">
+<meta property="og:url" content="https://www.bejo.es/">
+<meta property="og:image" content="https://www.bejo.es/sites/bejo-drupal/files/styles/banner_middle_xxxl/public/media/images/Revolution%20Open%20Days%20%282%29.jpg?itok=0jSvdbMK">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2343B02A'/%3E%3Cpath d='M16 6c-5 5-7 9-7 13a7 7 0 0014 0c0-4-2-8-7-13z' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://www.bejo.es">
+<!-- Barlow: sustituta web de DIN 2014 (tipografía corporativa con licencia; si se dispone del kit, se carga antes en --font) -->
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ==========================================================================
+   Bejo Ibérica · Landing bejo.es
+   Sistema visual de bejo.com + correcciones de marketing:
+   - Verde #43B02A = campo y llamadas a la acción
+   - Azul  #6CACE4 = innovación
+   - Sin bloques grises · CTA verde (no negro) · degradado oscuro en hero
+   - Tipografía DIN 2014 (Barlow como sustituta web) · retícula 12 col → 4 col
+   ========================================================================== */
+
+:root{
+  /* Paleta oficial Bejo */
+  --green:#43B02A; --green-dark:#2f7f1c; --green-hover:#3a9b24;
+  --blue:#6CACE4; --blue-dark:#5D98C1; --yellow:#FFB81C; --black:#000; --white:#fff;
+
+  /* Tokens de interfaz */
+  --bg:#ffffff; --ink:#0b0b0b; --muted:#4a4a4a; --line:#dcdfd9; --surface:#ffffff;
+  --tint-green:#F1F7EE; --tint-blue:#EEF5FC; --ph:#DDE8D6;
+  --font:"DIN 2014","Barlow",Arial,Helvetica,sans-serif;
+
+  /* Retícula */
+  --wrap:1280px; --pad:80px; --gutter:24px; --cols:12; --header:76px;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#111411; --ink:#f2f4f0; --muted:#b9c0b5; --line:#2c332a; --surface:#181c17;
+    --tint-green:#152012; --tint-blue:#121b24; --ph:#23301f; --green-dark:#5cc743;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#111411; --ink:#f2f4f0; --muted:#b9c0b5; --line:#2c332a; --surface:#181c17;
+  --tint-green:#152012; --tint-blue:#121b24; --ph:#23301f; --green-dark:#5cc743;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--header) + 12px);-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img,svg{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3,h4{margin:0;line-height:1.12;font-weight:600;letter-spacing:-.01em}
+p{margin:0}
+button,input,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--yellow);outline-offset:3px}
+.sr-only{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.skip{position:absolute;left:12px;top:-60px;z-index:100;background:var(--green);color:#000;padding:10px 16px;font-weight:600;text-decoration:none}
+.skip:focus{top:12px}
+
+/* Retícula de 12 columnas (4 en móvil) */
+.wrap{max-width:calc(var(--wrap) + var(--pad)*2);margin:0 auto;padding:0 var(--pad)}
+.grid{display:grid;grid-template-columns:repeat(var(--cols),minmax(0,1fr));gap:var(--gutter)}
+
+.section{padding:104px 0}
+.section--flush{padding-top:0}
+.section-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:48px}
+.section-head h2{font-size:clamp(28px,3vw,40px)}
+.section-head p{color:var(--muted);margin-top:10px;max-width:72ch}
+.eyebrow{display:inline-block;font-size:14px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--green-dark);margin-bottom:12px}
+
+/* Banda de color lateral (top-band del manual) */
+.band{position:fixed;left:0;top:0;bottom:0;width:6px;z-index:60;background:linear-gradient(var(--black) 0 33%,var(--blue) 33% 66%,var(--green) 66%)}
+
+/* Botones y enlaces */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 24px;font-weight:600;font-size:16px;line-height:1.2;text-decoration:none;border:2px solid transparent;border-radius:2px;cursor:pointer;transition:background .15s,color .15s,border-color .15s;white-space:nowrap}
+.btn svg{width:18px;height:18px;flex-shrink:0}
+.btn-green{background:var(--green);color:#000}
+.btn-green:hover{background:var(--green-hover)}
+.btn-ghost{border-color:#fff;color:#fff;background:transparent}
+.btn-ghost:hover{background:#fff;color:#000}
+.btn-outline{border-color:var(--ink);color:var(--ink);background:transparent}
+.btn-outline:hover{background:var(--ink);color:var(--bg)}
+.btn-outline-blue{border-color:var(--blue-dark);color:var(--ink);background:transparent}
+.btn-outline-blue:hover{background:var(--blue-dark);color:#fff}
+.btn-sm{min-height:40px;padding:0 18px;font-size:15px}
+.link{font-weight:600;text-decoration:none;border-bottom:2px solid var(--green);padding-bottom:2px}
+.link:hover{border-color:var(--ink)}
+.link-arrow::after{content:" →"}
+
+/* Fotografía real (con color de reserva si la imagen no carga) */
+.photo{position:relative;background-color:var(--ph);overflow:hidden}
+.photo img{width:100%;height:100%;object-fit:cover}
+.photo.is-empty{display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--tint-green),var(--ph))}
+.photo.is-empty img{display:none}
+.photo-fallback{display:none}
+.photo.is-empty .photo-fallback{display:block;width:72px;height:72px;stroke:var(--green);fill:none;stroke-width:1.6;opacity:.8}
+
+/* Logo */
+.logo{display:inline-flex;align-items:center;flex-shrink:0;text-decoration:none;height:48px}
+.logo img{height:44px;width:auto}
+.logo-text{display:none;font-weight:700;font-size:30px;letter-spacing:-.02em;color:var(--green)}
+.logo.is-text img{display:none}
+.logo.is-text .logo-text{display:inline}
+.logo.neg img{filter:brightness(0) invert(1)}
+.logo.neg .logo-text{color:#fff}
+
+/* 1 · Header */
+.header{position:sticky;top:0;z-index:50;background:var(--bg);border-bottom:1px solid var(--line);transition:box-shadow .2s}
+.header.scrolled{box-shadow:0 6px 18px rgba(0,0,0,.08)}
+.header .wrap{display:flex;align-items:center;gap:28px;height:var(--header)}
+.nav{display:flex;gap:24px;margin-left:auto;align-items:center}
+.nav a{text-decoration:none;font-size:15px;font-weight:500;padding:6px 0;border-bottom:2px solid transparent}
+.nav a:hover,.nav a[aria-current="true"]{border-color:var(--green)}
+.search{position:relative;display:flex;align-items:center;border:1px solid var(--line);height:40px;width:210px;padding:0 10px;gap:8px;background:var(--surface)}
+.search input{border:0;outline:0;background:transparent;width:100%;font-size:14px;min-width:0}
+.search:focus-within{border-color:var(--green)}
+.search svg{flex-shrink:0;width:16px;height:16px}
+.search-results{position:absolute;left:-1px;right:-1px;top:100%;margin:0;padding:6px 0;list-style:none;background:var(--surface);border:1px solid var(--line);box-shadow:0 12px 24px rgba(0,0,0,.12);z-index:70;display:none;max-height:320px;overflow:auto}
+.search-results.open{display:block}
+.search-results a{display:block;padding:9px 14px;text-decoration:none;font-size:14px;line-height:1.3}
+.search-results a small{display:block;color:var(--muted);font-size:12px}
+.search-results a:hover,.search-results a.active{background:var(--tint-green)}
+.lang{font-weight:700;font-size:14px;text-decoration:none}
+.nav-cta{margin-left:4px}
+.icon-btn{display:none;background:none;border:0;width:44px;height:44px;align-items:center;justify-content:center;cursor:pointer;color:var(--ink)}
+.mobile-menu{display:none}
+
+/* 2 · Hero */
+.hero{position:relative;color:#fff;min-height:640px;display:flex;align-items:center;background:#2f3a2b;isolation:isolate;overflow:hidden}
+.hero-media{position:absolute;inset:0;z-index:-2;background:linear-gradient(120deg,#4f5d48 0%,#7d8c6c 55%,#b9c2a8 100%)}
+.hero-media img{width:100%;height:100%;object-fit:cover;object-position:center 40%}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(0,0,0,.82) 0%,rgba(0,0,0,.6) 42%,rgba(0,0,0,.15) 100%)}
+.hero .wrap{width:100%}
+.hero-content{grid-column:1 / span 7;padding:96px 0}
+.hero-kicker{color:#b8e3ad;font-size:15px;font-weight:500;margin-bottom:20px}
+.hero h1{font-size:clamp(40px,5vw,64px);font-weight:600;letter-spacing:-.02em;margin-bottom:24px}
+.hero .lead{font-size:20px;max-width:46ch;margin-bottom:36px;color:#eef1ea}
+.hero-ctas{display:flex;gap:16px;flex-wrap:wrap}
+.hero-trust{display:flex;flex-wrap:wrap;gap:8px 24px;margin:36px 0 0;padding:0;list-style:none;font-size:15px;color:#dfe6da}
+.hero-trust li{display:flex;align-items:center;gap:8px}
+.hero-trust li::before{content:"";width:8px;height:8px;background:var(--green);flex-shrink:0}
+
+/* 3 · Cultivos */
+.crops{display:grid;grid-template-columns:repeat(6,1fr);gap:var(--gutter)}
+.crop{display:flex;flex-direction:column;align-items:center;text-align:center;gap:10px;padding:28px 14px 26px;border:1px solid var(--line);background:var(--surface);text-decoration:none;transition:border-color .15s,transform .15s,box-shadow .15s}
+.crop:hover{border-color:var(--green);transform:translateY(-3px);box-shadow:0 10px 22px rgba(67,176,42,.12)}
+.crop svg{width:60px;height:60px;padding:8px;border:2px solid var(--green);border-radius:50%;stroke:var(--green);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.crop strong{font-size:19px;font-weight:600}
+.crop span{font-size:14px;color:var(--muted);line-height:1.4}
+.crop.eco{border-color:var(--yellow)}
+.crop.eco svg{border-color:var(--yellow);stroke:#d99600}
+.crop.eco span b{font-weight:700}
+.crop.flash{border-color:var(--green);box-shadow:0 0 0 4px rgba(67,176,42,.25)}
+.hint{display:none}
+
+/* 4 · Campaña */
+.varieties{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--gutter)}
+.variety{border:1px solid var(--line);background:var(--surface);display:flex;flex-direction:column}
+.variety .photo{aspect-ratio:16/9}
+.variety-body{padding:22px 24px 26px;display:flex;flex-direction:column;gap:10px;align-items:flex-start;flex:1}
+.tag{font-size:13px;font-weight:600;padding:2px 8px;border:1.5px solid var(--green);background:var(--tint-green)}
+.variety h3{font-size:24px}
+.variety p{color:var(--muted)}
+.variety dl{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;margin:2px 0 6px;font-size:14px}
+.variety dt{font-weight:600}
+.variety dd{margin:0;color:var(--muted)}
+.variety .link{margin-top:auto}
+.more-mobile{display:none}
+
+/* Catálogo (microconversión) */
+.catalog{background:var(--tint-green);border-top:5px solid var(--green)}
+.catalog .wrap{display:flex;align-items:center;justify-content:space-between;gap:32px;padding-top:44px;padding-bottom:44px}
+.catalog-text{display:flex;align-items:center;gap:24px}
+.catalog-text svg{width:56px;height:56px;flex-shrink:0;stroke:var(--green-dark);fill:none;stroke-width:1.8}
+.catalog h2{font-size:clamp(22px,2.2vw,28px);margin-bottom:6px}
+.catalog p{color:var(--muted)}
+.catalog-actions{display:flex;gap:12px;flex-wrap:wrap;justify-content:flex-end}
+
+/* 5 · Por qué Bejo */
+.why .wrap{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.why h2{font-size:clamp(30px,3.2vw,44px);margin-bottom:24px}
+.why .intro p{color:var(--muted);max-width:50ch}
+.why .intro p + p{margin-top:14px}
+.why .intro .link{display:inline-block;margin-top:24px}
+.why ol{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.why li{display:grid;grid-template-columns:44px 1fr;gap:0 16px;padding:18px 0;border-bottom:1px solid var(--line)}
+.why li b{color:var(--green-dark);font-weight:700;font-size:19px;grid-row:span 2}
+.why li strong{font-size:19px;font-weight:600}
+.why li span{color:var(--muted);font-size:15px}
+
+/* Cifras */
+.stats{background:var(--blue-dark);color:#fff;padding:56px 0}
+.stats ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,1fr);gap:24px}
+.stats strong{display:block;font-size:clamp(34px,3.4vw,48px);font-weight:700;line-height:1;margin-bottom:6px}
+.stats span{font-size:16px;font-weight:500;line-height:1.35;display:block}
+
+/* 6 · Innovación */
+.tech-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--gutter)}
+.tech{display:grid;grid-template-columns:1fr 1.1fr;background:var(--tint-blue);border-top:5px solid var(--blue)}
+.tech .photo{min-height:100%;background-color:#d5e3f0}
+.tech-body{padding:32px 28px;display:flex;flex-direction:column;gap:14px;align-items:flex-start}
+.tech h3{font-size:24px}
+.tech p{color:var(--muted);font-size:16px}
+.tech ul{margin:0;padding:0;list-style:none;font-size:15px}
+.tech li{padding-left:18px;position:relative;margin:4px 0}
+.tech li::before{content:"";position:absolute;left:0;top:.55em;width:8px;height:8px;background:var(--blue)}
+.tech .link{border-color:var(--blue)}
+
+/* 7 · Noticias */
+.news-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--gutter)}
+.news{text-decoration:none;display:flex;flex-direction:column;gap:12px}
+.news .photo{aspect-ratio:16/9}
+.news-meta{font-size:14px;color:var(--muted)}
+.news-meta b{color:var(--ink);font-weight:600;margin-right:6px}
+.news h3{font-size:20px;line-height:1.3}
+.news:hover h3{text-decoration:underline;text-decoration-color:var(--green);text-underline-offset:4px}
+.newsletter{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-top:48px;padding:22px 26px;border:1px solid var(--line);border-left:5px solid var(--green)}
+.newsletter p{font-weight:500}
+
+/* 8 · Técnico de zona */
+.contact{background:var(--tint-green);border-top:5px solid var(--green)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--gutter);align-items:stretch}
+.card{background:var(--surface);border:1px solid var(--line);padding:32px}
+.card h3{font-size:20px;margin-bottom:16px}
+.step{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:50%;background:var(--green);color:#000;font-size:15px;font-weight:700;margin-right:10px;vertical-align:middle}
+.field{display:flex;flex-direction:column;gap:6px;margin-bottom:18px;position:relative}
+.field label{font-weight:600;font-size:15px}
+.field label .opt{font-weight:400;color:var(--muted)}
+.input,.select{width:100%;min-height:50px;border:1.5px solid #9aa596;background:var(--bg);color:var(--ink);padding:0 14px;border-radius:2px;font-size:16px}
+textarea.input{padding:12px 14px;min-height:104px;resize:vertical}
+.input:focus,.select:focus{border-color:var(--green);outline:none;box-shadow:0 0 0 3px rgba(67,176,42,.25)}
+.select{appearance:none;-webkit-appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23666' stroke-width='2' fill='none'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 16px center;padding-right:40px}
+
+.map{margin:20px 0}
+.map svg{width:100%;height:auto}
+.map .tile{cursor:pointer}
+.map .tile rect{fill:var(--ph);stroke:var(--surface);stroke-width:2;transition:fill .15s}
+.map .tile text{font-size:11px;font-weight:600;fill:var(--muted);pointer-events:none;text-anchor:middle;dominant-baseline:central}
+.map .tile:hover rect,.map .tile:focus rect{fill:#bfe0b3}
+.map .tile.in-zone rect{fill:#a6d796}
+.map .tile.in-zone text{fill:#0d2a06}
+.map .tile.active rect{fill:var(--green)}
+.map .tile.active text{fill:#000}
+.map .tile:focus{outline:none}
+.map .tile:focus-visible rect{stroke:var(--yellow);stroke-width:3}
+.map-inset{fill:none;stroke:var(--line);stroke-dasharray:4 3}
+.map-caption{font-size:13px;color:var(--muted);margin-top:6px}
+
+.techie{display:flex;gap:16px;align-items:flex-start;padding:20px;border:1px solid var(--line);background:var(--bg);margin-top:4px}
+.techie[data-empty="true"]{opacity:.85}
+.avatar{width:56px;height:56px;border-radius:50%;flex-shrink:0;background:var(--green);display:flex;align-items:center;justify-content:center;color:#000}
+.avatar svg{width:28px;height:28px;stroke:#000;fill:none;stroke-width:1.8}
+.techie strong{display:block;font-size:18px;line-height:1.25}
+.techie .zone{font-size:14px;color:var(--muted);display:block;margin:2px 0 10px}
+.techie-actions{display:flex;flex-wrap:wrap;gap:8px}
+.techie-actions .btn{min-height:40px;padding:0 14px;font-size:14px}
+
+.form-intro{color:var(--muted);font-size:15px;margin:-6px 0 18px}
+.form-note{font-size:14px;margin-top:12px;color:var(--muted)}
+.form-legal{font-size:12.5px;margin-top:10px;color:var(--muted);line-height:1.45}
+.form-legal a{color:inherit}
+.form-ok{display:none;margin-top:16px;background:var(--tint-green);border-left:5px solid var(--green);padding:14px 16px;font-weight:500}
+.form-ok.show{display:block}
+.form-err{display:none;margin-bottom:16px;border-left:5px solid #c62828;background:rgba(198,40,40,.07);padding:12px 14px;font-weight:600;font-size:15px}
+.form-err.show{display:block}
+.field.error .input,.field.error .select{border-color:#c62828;border-width:2px}
+.err{display:none;font-size:14px;font-weight:600;color:#c62828}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .err{color:#ff8a80}}
+.field.error .err{display:block}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+#contactForm .btn-green{width:100%}
+
+/* 9 · Footer */
+.footer{background:#000;color:#fff;padding:72px 0 32px}
+.footer-top{display:grid;grid-template-columns:1.3fr 1fr 1fr 1.2fr;gap:40px}
+.footer-brand{display:flex;flex-direction:column;gap:20px;align-items:flex-start}
+.footer-brand p{color:#c9c9c9}
+.footer h4{margin:0 0 14px;font-size:15px;font-weight:600;color:var(--green)}
+.footer ul{list-style:none;margin:0;padding:0;font-size:15px;line-height:2}
+.footer address{font-style:normal}
+.footer a{text-decoration:none;color:#ddd}
+.footer a:hover{color:#fff;text-decoration:underline}
+.footer details summary{list-style:none}
+.footer details summary::-webkit-details-marker{display:none}
+.social{display:flex;gap:10px;margin-top:10px}
+.social a{display:inline-flex;width:40px;height:40px;align-items:center;justify-content:center;border:1px solid #444;border-radius:50%}
+.social a:hover{border-color:var(--green);background:#111;text-decoration:none}
+.social svg{width:18px;height:18px;fill:#fff}
+.footer-bottom{display:flex;justify-content:space-between;gap:16px;margin-top:56px;padding-top:24px;border-top:1px solid #333;font-size:14px;color:#aaa}
+.footer-bottom nav{display:flex;gap:20px;flex-wrap:wrap}
+.sticky-cta{display:none}
+
+/* ---------- Tablet ---------- */
+@media (max-width:1180px){
+  :root{--pad:40px}
+  .nav{gap:16px}
+  .nav .nav-extra{display:none}
+  .search{width:170px}
+  .crops{grid-template-columns:repeat(3,1fr)}
+  .tech{grid-template-columns:1fr}
+  .tech .photo{min-height:200px}
+  .stats ul{grid-template-columns:repeat(3,1fr);row-gap:32px}
+  .footer-top{grid-template-columns:1fr 1fr}
+  .catalog .wrap{flex-direction:column;align-items:flex-start}
+  .catalog-actions{justify-content:flex-start}
+}
+
+/* ---------- Móvil (4 columnas) ---------- */
+@media (max-width:860px){
+  :root{--pad:20px;--header:64px;--cols:4;--gutter:16px}
+  body{font-size:16px;padding-bottom:calc(76px + env(safe-area-inset-bottom,0px))}
+  .band{width:4px}
+  .section{padding:64px 0}
+  .section-head{margin-bottom:28px;flex-direction:column;align-items:flex-start}
+  .logo img{height:36px}
+  .nav,.header .search,.lang,.desk-only{display:none!important}
+  .icon-btn{display:inline-flex}
+  .header .wrap{gap:4px}
+  .header .tools{margin-left:auto;display:flex}
+  .mobile-menu{display:block;position:fixed;left:0;right:0;top:var(--header);bottom:0;background:var(--bg);z-index:49;padding:16px 20px 40px;overflow-y:auto;transform:translateX(100%);transition:transform .25s ease;visibility:hidden}
+  .mobile-menu.open{transform:none;visibility:visible}
+  .mobile-menu > a{display:block;padding:16px 0;border-bottom:1px solid var(--line);font-size:19px;font-weight:500;text-decoration:none}
+  .mobile-menu .search{display:flex;width:100%;height:50px;margin:8px 0 12px}
+  .mobile-menu .btn{width:100%;margin-top:20px}
+
+  .hero{min-height:auto;align-items:flex-end}
+  .hero::before{background:linear-gradient(180deg,rgba(0,0,0,.15) 0%,rgba(0,0,0,.55) 38%,rgba(0,0,0,.88) 100%)}
+  .hero-content{grid-column:1 / -1;padding:200px 0 36px}
+  .hero h1{font-size:36px;margin-bottom:14px}
+  .hero .lead{font-size:17px;margin-bottom:24px}
+  .hero-ctas{flex-direction:column;gap:12px}
+  .hero-ctas .btn{width:100%;min-height:52px}
+  .hero-kicker{font-size:14px;margin-bottom:10px}
+  .hero-trust{margin-top:24px;font-size:14px;gap:6px 18px}
+
+  .crops{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-inline:var(--pad);gap:12px;margin:0 calc(var(--pad)*-1);padding:4px var(--pad) 8px;scrollbar-width:none}
+  .crops::-webkit-scrollbar{display:none}
+  .crop{flex:0 0 40%;scroll-snap-align:start;padding:20px 10px}
+  .crop svg{width:52px;height:52px}
+  .crop strong{font-size:17px}
+  .crop span{font-size:13px}
+  .hint{display:block;font-size:13px;color:var(--muted);margin-top:12px}
+
+  .varieties{grid-template-columns:1fr;gap:16px}
+  .variety:nth-child(3){display:none}
+  .variety-body{padding:16px 18px 20px}
+  .variety h3{font-size:21px}
+  .more-mobile{display:inline-block;margin-top:24px}
+
+  .catalog .wrap{padding-top:32px;padding-bottom:32px;gap:20px}
+  .catalog-text{gap:16px;align-items:flex-start}
+  .catalog-text svg{width:40px;height:40px}
+  .catalog-actions,.catalog-actions .btn{width:100%}
+
+  .why .wrap{grid-template-columns:1fr;gap:28px}
+  .why h2{font-size:28px;margin-bottom:14px}
+  .why .intro p.extra{display:none}
+  .why li{padding:14px 0;grid-template-columns:36px 1fr}
+  .why li strong,.why li b{font-size:17px}
+  .why li span{display:none}
+
+  .stats{padding:36px 0}
+  .stats ul{grid-template-columns:1fr 1fr;row-gap:28px}
+  .stats li:nth-child(5){display:none}
+  .stats span{font-size:14px}
+
+  .tech-grid{grid-template-columns:1fr;gap:20px}
+  .tech .photo{min-height:180px}
+  .tech-body{padding:22px 20px 26px}
+  .tech-body ul{display:none}
+  .tech h3{font-size:21px}
+  .head-btn{display:none}
+
+  .news-grid{grid-template-columns:1fr;gap:0}
+  .news{flex-direction:row;gap:16px;padding:16px 0;border-bottom:1px solid var(--line)}
+  .news .photo{width:112px;flex-shrink:0;aspect-ratio:4/3}
+  .news h3{font-size:17px}
+  .news-meta{font-size:13px}
+  .news-all-desk{display:none}
+  .newsletter{flex-direction:column;align-items:flex-start;margin-top:28px;padding:18px}
+  .newsletter .btn{width:100%}
+
+  .contact-grid{grid-template-columns:1fr;gap:16px}
+  .card{padding:20px 16px}
+  .map{display:none}
+  .field{margin-bottom:12px}
+  .desk-field{display:none}
+
+  .footer{padding:40px 0 24px}
+  .footer-top{grid-template-columns:1fr;gap:0}
+  .footer-brand{margin-bottom:24px}
+  .footer-brand .btn{width:100%}
+  .footer details{border-bottom:1px solid #333}
+  .footer details summary{display:flex;justify-content:space-between;align-items:center;padding:18px 0;cursor:pointer}
+  .footer details summary::after{content:"+";font-size:22px;color:#fff}
+  .footer details[open] summary::after{content:"–"}
+  .footer h4{margin:0;color:#fff;font-size:16px}
+  .footer details > ul,.footer details > address{padding-bottom:16px}
+  .footer-bottom{flex-direction:column;margin-top:24px;padding-top:0;border:0}
+  .footer-bottom nav{gap:14px}
+
+  .sticky-cta{display:flex;gap:10px;position:fixed;left:0;right:0;bottom:0;z-index:40;background:var(--bg);border-top:1px solid var(--line);padding:10px 20px calc(10px + env(safe-area-inset-bottom,0px));transition:transform .2s}
+  .sticky-cta.hide{transform:translateY(110%)}
+  .sticky-cta .btn-green{flex:1}
+  .sticky-cta .btn-call{border:2px solid var(--ink);color:var(--ink);background:var(--bg);padding:0 18px}
+}
+@media (min-width:861px){
+  .mob-only{display:none!important}
+  .footer details summary{cursor:default;pointer-events:none}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition:none!important;scroll-behavior:auto!important}
+}
+@media print{
+  .band,.header,.sticky-cta,.mobile-menu,.hero-ctas{display:none!important}
+  .hero{color:#000;min-height:0}.hero::before,.hero-media{display:none}
+}
+
+</style>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Organization",
+  "name":"Bejo Zaden Ibérica, S.L.U.",
+  "alternateName":"Bejo Ibérica",
+  "url":"https://www.bejo.es/",
+  "logo":"https://www.bejo.es/sites/bejo-drupal/files/Bejo-LG_1.svg",
+  "slogan":"Exploring nature never stops",
+  "email":"info@bejo.es",
+  "telephone":"+34 91 658 70 72",
+  "address":{"@type":"PostalAddress","streetAddress":"Calle del Hervidero, 15","postalCode":"28750","addressLocality":"San Agustín del Guadalix","addressRegion":"Madrid","addressCountry":"ES"},
+  "parentOrganization":{"@type":"Organization","name":"Bejo Zaden B.V.","url":"https://www.bejo.com/"},
+  "sameAs":["https://www.linkedin.com/company/bejoespana/","https://www.instagram.com/bejoespana/","https://www.youtube.com/channel/UCln8HXi0CUPpkFVuDEpy3uQ","https://www.facebook.com/BejoEspana/","https://www.twitter.com/BejoEspana"]
+}
+</script>
+</head>
+<body>
+<div class="band" aria-hidden="true"></div>
+<a class="skip" href="#main">Saltar al contenido</a>
+
+<!-- ============ 1 · Header ============ -->
+<header class="header" id="top">
+  <div class="wrap">
+    <a href="https://www.bejo.es/" class="logo" aria-label="Bejo Ibérica, inicio">
+      <img src="https://www.bejo.es/sites/bejo-drupal/files/Bejo-LG_1.svg" alt="Bejo" width="120" height="44">
+      <span class="logo-text" aria-hidden="true">Bejo</span>
+    </a>
+    <nav class="nav" aria-label="Principal">
+      <a href="#variedades">Variedades</a>
+      <a href="#innovacion">Innovación y tecnología</a>
+      <a href="#noticias">Noticias y eventos</a>
+      <a href="#por-que">Conoce Bejo</a>
+      <a href="https://www.bejo.es/careers" class="nav-extra">Trabaja con nosotros</a>
+    </nav>
+    <form class="search" role="search" data-search>
+      <label class="sr-only" for="searchDesk">Buscar cultivo o variedad</label>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+      <input type="search" id="searchDesk" placeholder="Buscar variedad" autocomplete="off" aria-autocomplete="list" aria-controls="searchDeskList" aria-expanded="false">
+      <ul class="search-results" id="searchDeskList" role="listbox"></ul>
+    </form>
+    <a href="https://www.bejo.com/countries" class="lang" title="Otros países Bejo" aria-label="Idioma: español. Ver otros países Bejo">ES</a>
+    <a href="#tecnico" class="btn btn-green btn-sm nav-cta desk-only" data-track="cta_contacto_menu">Contacto</a>
+    <div class="tools mob-only">
+      <button class="icon-btn" id="searchBtn" type="button" aria-label="Buscar variedad">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+      </button>
+      <button class="icon-btn" id="menuBtn" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileMenu">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu" aria-label="Menú">
+  <form class="search" role="search" data-search>
+    <label class="sr-only" for="mobSearch">Buscar cultivo o variedad</label>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+    <input type="search" id="mobSearch" placeholder="Buscar cultivo o variedad" autocomplete="off" aria-autocomplete="list" aria-controls="searchMobList" aria-expanded="false">
+    <ul class="search-results" id="searchMobList" role="listbox"></ul>
+  </form>
+  <a href="#variedades">Variedades</a>
+  <a href="#innovacion">Innovación y tecnología</a>
+  <a href="#noticias">Noticias y eventos</a>
+  <a href="#por-que">Conoce Bejo</a>
+  <a href="https://www.bejo.es/careers">Trabaja con nosotros</a>
+  <a href="https://www.bejo.com/countries">Idioma: ES · Otros países</a>
+  <a href="#tecnico" class="btn btn-green" data-track="cta_contacto_menu">Hablar con mi técnico</a>
+</div>
+
+<main id="main">
+
+<!-- ============ FASE 1 · ENCONTRAR ============ -->
+
+<!-- 2 · Hero -->
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero-media" aria-hidden="true">
+    <img src="https://www.bejo.es/sites/bejo-drupal/files/styles/banner_middle_xxxl/public/media/images/Revolution%20Open%20Days%20%282%29.jpg?itok=0jSvdbMK" alt="" fetchpriority="high" data-fallback>
+  </div>
+  <div class="wrap grid">
+    <div class="hero-content">
+      <p class="hero-kicker">Bejo Ibérica · Exploring nature never stops</p>
+      <h1 id="hero-title">Semillas hortícolas para el agricultor profesional</h1>
+      <p class="lead">Encuentra la variedad que encaja con tu<span class="desk-only"> zona y tu</span> ciclo<span class="desk-only">,</span> y habla directamente con tu técnico.</p>
+      <div class="hero-ctas">
+        <a href="#variedades" class="btn btn-green" data-track="cta_buscar_cultivo_hero">Buscar por cultivo</a>
+        <a href="#tecnico" class="btn btn-ghost" data-track="cta_tecnico_hero">Hablar con un técnico</a>
+      </div>
+      <ul class="hero-trust">
+        <li>Técnicos en toda España</li>
+        <li class="desk-only">Catálogo general 2026–2028</li>
+        <li>Respuesta en 48 h laborables</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- 3 · Acceso rápido por cultivo -->
+<section class="section" id="variedades" aria-labelledby="crops-title">
+  <div class="wrap">
+    <div class="section-head"><div>
+      <h2 id="crops-title">¿Qué cultivas?</h2>
+      <p><span class="mob-only">Desliza y elige</span><span class="desk-only">Elige</span> tu grupo de cultivo y ve directo a sus variedades.</p>
+    </div>
+      <a href="https://www.bejo.es/variedades" class="link link-arrow desk-only">Ver todas las variedades</a>
+    </div>
+    <div class="crops" role="list">
+      <a href="https://www.bejo.es/variedades" class="crop" role="listitem" data-crop="allium" data-track="crop_allium">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 8c0 7-11 11-11 21a11 11 0 0 0 22 0c0-10-11-14-11-21z"/><path d="M24 19c-3 4-4.5 8-4.5 12M24 19c3 4 4.5 8 4.5 12"/><path d="M21 41l-2 3M24 41v3M27 41l2 3"/></svg>
+        <strong>Allium</strong><span>Cebolla, puerro y microbulbos</span>
+      </a>
+      <a href="https://www.bejo.es/variedades" class="crop" role="listitem" data-crop="brasicas" data-track="crop_brasicas">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="25" r="14"/><path d="M24 11c-6 6-6 22 0 28M24 11c6 6 6 22 0 28M11 21c7 3 19 3 26 0"/></svg>
+        <strong>Brásicas</strong><span>Coliflor, brócoli, coles</span>
+      </a>
+      <a href="https://www.bejo.es/variedades" class="crop" role="listitem" data-crop="hoja" data-track="crop_hoja">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M10 38C10 20 22 10 38 10c0 16-10 28-28 28z"/><path d="M10 38l20-20M18 30h7M22 26v-6"/></svg>
+        <strong>Cultivos de hoja</strong><span>Lechuga, apio, kale</span>
+      </a>
+      <a href="https://www.bejo.es/variedades" class="crop" role="listitem" data-crop="fruto" data-track="crop_fruto">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M12 36c-4-4-2-10 4-16l6-6c6-6 12-8 16-4s2 10-4 16l-6 6c-6 6-12 8-16 4z"/><path d="M38 10l3-3M20 26h.01M26 20h.01M24 30h.01M30 24h.01"/></svg>
+        <strong>Cultivos de fruto</strong><span>Pepino, calabacín, judía</span>
+      </a>
+      <a href="https://www.bejo.es/variedades" class="crop" role="listitem" data-crop="raiz" data-track="crop_raiz">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M30 18L12 40l-2-2 18-22z"/><path d="M28 16l4 4M31 15l2-7M33 17l7-2M32 16l6-6M17 34l3 1M21 29l3 1"/></svg>
+        <strong>Cultivos de raíz</strong><span>Zanahoria, remolacha, hinojo</span>
+      </a>
+      <a href="https://www.bejo.es/ecologico" class="crop eco" role="listitem" data-crop="eco" data-track="crop_ecologico">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 40V24"/><path d="M24 26c0-8-6-12-14-12 0 8 6 12 14 12zM24 22c0-6 5-10 12-10 0 7-5 10-12 10z"/><path d="M15 40h18"/></svg>
+        <strong>Ecológico</strong><span><b>RIGHT</b> from the <b>START</b></span>
+      </a>
+    </div>
+    <p class="hint">Desliza para ver todos los grupos de cultivo.</p>
+  </div>
+</section>
+
+<!-- 4 · Destacado de campaña -->
+<section class="section section--flush" id="campana" aria-labelledby="camp-title">
+  <div class="wrap">
+    <div class="section-head"><div>
+      <h2 id="camp-title">Para tu próxima siembra</h2>
+      <p>Variedades recomendadas para la campaña de otoño–invierno.<span class="desk-only"> Cambian con cada temporada.</span></p>
+    </div></div>
+    <div class="varieties">
+      <article class="variety" id="var-revolution">
+        <div class="photo"><img src="https://www.bejo.es/sites/bejo-drupal/files/styles/gallery_item_lg/public/media/images/Revolution%20Open%20Days%20%2812%29.jpg?itok=Qv2knWuD" alt="Cebolla Revolution en la jornada de campo de Bejo en Antequera" loading="lazy" data-fallback>
+          <svg class="photo-fallback" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 8c0 7-11 11-11 21a11 11 0 0 0 22 0c0-10-11-14-11-21z"/></svg></div>
+        <div class="variety-body">
+          <span class="tag">Allium · Cebolla amarilla</span>
+          <h3>Revolution</h3>
+          <p>Cebolla de día corto muy precoz, con buena resistencia a la subida a flor y bulbos uniformes y firmes.</p>
+          <dl><dt>Zona</dt><dd>Zonas de producción temprana (p. ej. Antequera)</dd><dt>Ciclo</dt><dd>Muy precoz · día corto</dd></dl>
+          <a href="https://www.bejo.es/magazine/bejo-presenta-la-cebolla-revolution-en-una-jornada-de-campo-en-antequera" class="link link-arrow" data-track="ficha_revolution">Ver ficha<span class="sr-only"> de Revolution</span></a>
+        </div>
+      </article>
+      <article class="variety" id="var-bonnice">
+        <div class="photo"><img src="https://www.bejo.es/sites/bejo-drupal/files/styles/banner_middle_xxxl/public/media/images/lettuce_iceberg_bejo_26_143-21191-original.jpg?itok=ijqKNQSE" alt="Lechuga iceberg de Bejo en campo" loading="lazy" data-fallback>
+          <svg class="photo-fallback" viewBox="0 0 48 48" aria-hidden="true"><path d="M10 38C10 20 22 10 38 10c0 16-10 28-28 28z"/></svg></div>
+        <div class="variety-body">
+          <span class="tag">Hoja · Lechuga iceberg</span>
+          <h3>Bonnice</h3>
+          <p>Alta resistencia a Bremia 29-40, con buena forma de pieza y calidad en postcosecha.</p>
+          <dl><dt>Resistencias</dt><dd>Bremia (Bl) 29-40</dd><dt>Calidad</dt><dd>Buena forma y postcosecha</dd></dl>
+          <a href="https://www.bejo.es/variedades" class="link link-arrow" data-track="ficha_bonnice">Ver ficha<span class="sr-only"> de Bonnice</span></a>
+        </div>
+      </article>
+      <article class="variety" id="var-newlyn">
+        <div class="photo is-empty" role="img" aria-label="Coliflor Newlyn">
+          <svg class="photo-fallback" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="25" r="14"/><path d="M24 11c-6 6-6 22 0 28M24 11c6 6 6 22 0 28M11 21c7 3 19 3 26 0"/></svg></div>
+        <div class="variety-body">
+          <span class="tag">Brásicas · Coliflor</span>
+          <h3>Newlyn</h3>
+          <p>Coliflor para cosechar en febrero y marzo en zonas cálidas: producción en pleno invierno.</p>
+          <dl><dt>Zona</dt><dd>Zonas cálidas</dd><dt>Cosecha</dt><dd>Febrero–marzo</dd></dl>
+          <a href="https://www.bejo.es/variedades" class="link link-arrow" data-track="ficha_newlyn">Ver ficha<span class="sr-only"> de Newlyn</span></a>
+        </div>
+      </article>
+    </div>
+    <a href="https://www.bejo.es/variedades" class="link link-arrow more-mobile">Ver más variedades de campaña</a>
+  </div>
+</section>
+
+<!-- Catálogo PDF (microconversión) -->
+<section class="catalog" aria-labelledby="cat-title">
+  <div class="wrap">
+    <div class="catalog-text">
+      <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M12 4h18l8 8v32H12z"/><path d="M30 4v8h8M18 22h14M18 28h14M18 34h9"/></svg>
+      <div>
+        <h2 id="cat-title">Catálogo general 2026–2028</h2>
+        <p>Todas las variedades de Bejo para España en un PDF. Descárgalo y llévalo al campo.</p>
+      </div>
+    </div>
+    <div class="catalog-actions">
+      <a href="https://www.bejo.es/sites/bejo-drupal/files/media/files/ES-CatalogoGeneralEspana2628.pdf" class="btn btn-green" target="_blank" rel="noopener" data-track="descarga_catalogo">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M4 20h16"/></svg>
+        Descargar catálogo (PDF)</a>
+      <a href="https://www.bejo.es/ecologico" class="btn btn-outline">Gama ecológica</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FASE 2 · CONFIAR ============ -->
+
+<!-- 5 · Por qué Bejo -->
+<section class="section why" id="por-que" aria-labelledby="why-title">
+  <div class="wrap">
+    <div class="intro">
+      <span class="eyebrow">Conoce Bejo</span>
+      <h2 id="why-title"><span class="desk-only">Una empresa familiar que piensa en tu cosecha de hoy y en la de dentro de 50 años</span><span class="mob-only">Empresa familiar, pensando en tu cosecha de hoy y de dentro de 50 años</span></h2>
+      <p>Mejoramos, producimos y tratamos nuestras propias semillas, y trabajamos codo con codo con los agricultores para afinar cada variedad.</p>
+      <p class="extra">Bejo Ibérica es la filial en España de Bejo Zaden, empresa familiar neerlandesa con más de un siglo dedicado a la mejora de semillas hortícolas. Desde San Agustín del Guadalix (Madrid) damos servicio comercial y técnico a toda la Península.</p>
+      <a href="https://www.bejo.es/historia-de-bejo-iberica" class="link link-arrow">Historia de Bejo Ibérica</a>
+    </div>
+    <ol>
+      <li><b>01</b><strong>Obtentor de semillas para el agricultor profesional</strong><span>Toda la cadena en casa: mejora, producción y tratamiento de la semilla.</span></li>
+      <li><b>02</b><strong>Juntos a largo plazo</strong><span>Empresa familiar e independiente que cuida la relación con agricultores, cooperativas y distribuidores.</span></li>
+      <li><b>03</b><strong>Subiendo el listón con la innovación</strong><span>Mejora genética, ensayos en campo y tecnologías de semilla como B-Mox®.</span></li>
+      <li><b>04</b><strong>Cosechando hoy y dentro de 50 años</strong><span>Variedades sostenibles y 30 años de compromiso con la semilla ecológica.</span></li>
+      <li><b>05</b><strong>Calidad: las mejores semillas y variedades</strong><span>Semilla controlada lote a lote antes de llegar a tu explotación.</span></li>
+    </ol>
+  </div>
+</section>
+
+<!-- Cifras -->
+<section class="stats" aria-label="Bejo en cifras">
+  <div class="wrap">
+    <ul>
+      <li><strong>+100</strong><span>años mejorando semillas hortícolas</span></li>
+      <li><strong>+150</strong><span>variedades ecológicas</span></li>
+      <li><strong>30</strong><span>años de semilla ecológica</span></li>
+      <li><strong>50</strong><span>años: la cosecha en la que ya pensamos</span></li>
+      <li><strong>48 h</strong><span>para que tu técnico te responda</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- 6 · Innovación y tecnología -->
+<section class="section" id="innovacion" aria-labelledby="inno-title">
+  <div class="wrap">
+    <div class="section-head">
+      <div><h2 id="inno-title">Innovación y tecnología</h2><p>Lo que hay detrás de cada semilla<span class="desk-only"> que siembras</span>.</p></div>
+      <a href="https://www.bejo.es/revista" class="btn btn-outline-blue head-btn">Ver toda la tecnología</a>
+    </div>
+    <div class="tech-grid">
+      <article class="tech">
+        <div class="photo"><img src="https://www.bejo.es/sites/bejo-drupal/files/styles/gallery_item_lg/public/media/images/Breeding%20for%20organic_small.jpeg?itok=yeIApnBH" alt="Mejoradores de Bejo seleccionando plantas en campo" loading="lazy" data-fallback>
+          <svg class="photo-fallback" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 40V24"/><path d="M24 26c0-8-6-12-14-12 0 8 6 12 14 12z"/></svg></div>
+        <div class="tech-body">
+          <h3>Tecnologías de mejora genética</h3>
+          <p><span class="desk-only">Cómo obtenemos variedades más resistentes, uniformes y adaptadas a cada zona.</span><span class="mob-only">Variedades más resistentes y adaptadas a tu zona.</span></p>
+          <ul><li>Investigación y mejora clásica</li><li>Ensayos en campo en España</li><li>Resistencias (p. ej. Bremia 29-40 en lechuga)</li></ul>
+          <a href="https://www.bejo.es/bejo-mundo-exploring-nature-never-stops" class="link link-arrow">Descubrir<span class="sr-only"> tecnologías de mejora genética</span></a>
+        </div>
+      </article>
+      <article class="tech">
+        <div class="photo"><img src="https://www.bejo.es/sites/bejo-drupal/files/styles/gallery_item_lg/public/media/images/Different%20kinds%20of%20organic%20seed_small.jpeg?itok=K05LckjI" alt="Distintos tipos de semilla de Bejo" loading="lazy" data-fallback>
+          <svg class="photo-fallback" viewBox="0 0 48 48" aria-hidden="true"><ellipse cx="18" cy="20" rx="6" ry="4"/><ellipse cx="30" cy="28" rx="6" ry="4"/></svg></div>
+        <div class="tech-body">
+          <h3>Tecnologías de semillas</h3>
+          <p><span class="desk-only">Formas de producto que ayudan a que cada planta empiece con fuerza.</span><span class="mob-only">B-Mox®, microbulbos y Cropalyser.</span></p>
+          <ul><li>B-Mox®: pregerminación para cebolla y zanahoria</li><li>Microbulbos de cebolla</li><li>Cropalyser: seguimiento del cultivo</li></ul>
+          <a href="https://www.bejo.es/magazine/b-moxr" class="link link-arrow">Descubrir<span class="sr-only"> tecnologías de semillas</span></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 7 · Noticias y eventos -->
+<section class="section section--flush" id="noticias" aria-labelledby="news-title">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 id="news-title">Noticias y eventos</h2>
+      <a href="https://www.bejo.es/revista" class="link link-arrow news-all-desk">Ver todas</a>
+    </div>
+    <div class="news-grid">
+      <a href="https://www.bejo.es/magazine/jornada-de-puertas-abiertas-de-bejo-para-agricultores-y-socios-de-la-cadena-de-suministro" class="news">
+        <div class="photo"><img src="https://www.bejo.es/sites/bejo-drupal/files/styles/gallery_item_lg/public/media/images/Organic%20demo%20field_small.jpg?itok=80fQMUw9" alt="" loading="lazy" data-fallback></div>
+        <div>
+          <p class="news-meta"><b>Evento</b>22–25 sept. 2026</p>
+          <h3><span class="desk-only">Jornada de puertas abiertas en Warmenhuizen para agricultores y socios de la cadena</span><span class="mob-only">Puertas abiertas Bejo en Países Bajos 2026</span></h3>
+        </div>
+      </a>
+      <a href="https://www.bejo.es/magazine/bejo-presenta-la-cebolla-revolution-en-una-jornada-de-campo-en-antequera" class="news">
+        <div class="photo"><img src="https://www.bejo.es/sites/bejo-drupal/files/styles/gallery_item_lg/public/media/images/Revolution%20Open%20Days%20%287%29.jpg?itok=dhPT0Qvs" alt="" loading="lazy" data-fallback></div>
+        <div>
+          <p class="news-meta"><b>Jornada de campo</b>Allium</p>
+          <h3><span class="desk-only">Bejo presenta la cebolla Revolution en una jornada de campo en Antequera</span><span class="mob-only">Cebolla Revolution, en campo en Antequera</span></h3>
+        </div>
+      </a>
+      <a href="https://www.bejo.es/magazine/bejo-celebra-30-anos-de-semillas-ecologicas" class="news">
+        <div class="photo"><img src="https://www.bejo.es/sites/bejo-drupal/files/styles/gallery_item_lg/public/media/images/Organic%2030%20years%20Bejo%20colleagues_small%20.jpg?itok=DsTzXGda" alt="" loading="lazy" data-fallback></div>
+        <div>
+          <p class="news-meta"><b>Ecológico</b>2026</p>
+          <h3>Bejo celebra 30 años de semillas ecológicas</h3>
+        </div>
+      </a>
+    </div>
+    <a href="https://www.bejo.es/revista" class="link link-arrow mob-only" style="display:inline-block;margin-top:20px">Ver todas</a>
+    <div class="newsletter">
+      <p>Recibe novedades de variedades, jornadas de campo y ensayos en tu zona.</p>
+      <a href="https://us15.list-manage.com/survey?u=f30d8a76c23f361aeff1ba541&amp;id=507a707cc8&amp;attribution=false" class="btn btn-outline btn-sm" target="_blank" rel="noopener" data-track="newsletter">Suscribirme a la newsletter</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FASE 3 · CONTACTAR ============ -->
+
+<!-- 8 · Tu técnico en tu zona -->
+<section class="section contact" id="tecnico" aria-labelledby="contact-title">
+  <div class="wrap">
+    <div class="section-head"><div>
+      <h2 id="contact-title">Habla con tu técnico de zona</h2>
+      <p><span class="desk-only">Te asesora sobre qué variedad encaja con tu parcela, tu ciclo y tu mercado.</span><span class="mob-only">Elige tu provincia y te mostramos quién te atiende.</span></p>
+    </div></div>
+    <div class="contact-grid">
+      <div class="card zone-card">
+        <h3><span class="step">1</span>¿Dónde está tu explotación?</h3>
+        <label for="zoneSelect" class="sr-only">Selecciona tu provincia</label>
+        <select id="zoneSelect" class="select">
+          <option value="">Selecciona tu provincia</option>
+        </select>
+        <div class="map" id="map" aria-label="Mapa de zonas técnicas de España. Pulsa una provincia para seleccionarla."></div>
+        <div class="techie" id="techCard" data-empty="true" aria-live="polite">
+          <div class="avatar" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4.5-6 8-6s7 2 8 6"/></svg></div>
+          <div>
+            <strong id="techName">Equipo técnico-comercial de Bejo Ibérica</strong>
+            <span class="zone" id="techZone">Elige tu provincia para ver tu zona</span>
+            <div class="techie-actions">
+              <a href="tel:+34916587072" class="btn btn-green" id="techPhone" data-track="llamar_tecnico">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2"/></svg>
+                <span id="techPhoneTxt">91 658 70 72</span></a>
+              <a href="mailto:info@bejo.es" class="btn btn-outline" id="techMail" data-track="email_tecnico">Email</a>
+              <a href="https://wa.me/message/UYOLJTFTJJBNB1" class="btn btn-outline" id="techWa" target="_blank" rel="noopener" data-track="whatsapp_tecnico">WhatsApp</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3><span class="step">2</span>Envía tu consulta</h3>
+        <p class="form-intro">Solo te pedimos lo imprescindible. Tu técnico de zona te contesta.</p>
+        <form id="contactForm" novalidate>
+          <p class="form-err" id="formErr" role="alert" tabindex="-1">Revisa los campos marcados para poder enviar tu consulta.</p>
+          <div class="field"><label for="f-name">Nombre</label>
+            <input id="f-name" class="input" name="nombre" placeholder="Tu nombre" autocomplete="name" required aria-describedby="e-name">
+            <span class="err" id="e-name">Escribe tu nombre.</span></div>
+          <div class="field desk-field"><label for="f-prov">Provincia <span class="opt">(opcional)</span></label>
+            <select id="f-prov" class="select" name="provincia"><option value="">Selecciona</option></select></div>
+          <div class="field"><label for="f-crop">Cultivo</label>
+            <select id="f-crop" class="select" name="cultivo" required aria-describedby="e-crop">
+              <option value="">¿Qué cultivo te interesa?</option><option>Allium</option><option>Brásicas</option><option>Cultivos de hoja</option><option>Cultivos de fruto</option><option>Cultivos de raíz</option><option>Ecológico</option>
+            </select>
+            <span class="err" id="e-crop">Elige un cultivo.</span></div>
+          <div class="field"><label for="f-contact">Teléfono o email</label>
+            <input id="f-contact" class="input" name="contacto" placeholder="Teléfono o email" autocomplete="tel" inputmode="email" required aria-describedby="e-contact">
+            <span class="err" id="e-contact">Déjanos un teléfono (9 cifras) o un email válido para responderte.</span></div>
+          <div class="field desk-field"><label for="f-msg">Mensaje <span class="opt">(opcional)</span></label>
+            <textarea id="f-msg" class="input" name="mensaje" placeholder="¿Qué necesitas? Variedad, superficie, fecha de siembra…"></textarea></div>
+          <div class="hp" aria-hidden="true"><label for="f-web">No rellenar</label><input id="f-web" name="web" tabindex="-1" autocomplete="off"></div>
+          <button type="submit" class="btn btn-green" data-track="form_submit_click">Enviar consulta al técnico</button>
+          <p class="form-note">Te responde tu técnico de zona en un plazo de 48 h laborables.</p>
+          <p class="form-legal">Bejo Zaden Ibérica, S.L.U. tratará tus datos solo para responder a tu consulta. Puedes ejercer tus derechos en <a href="mailto:info@bejo.es">info@bejo.es</a>. Más información en <a href="https://www.bejo.es/terminos-y-declaraciones">Términos y declaraciones</a>.</p>
+          <p class="form-ok" id="formOk" role="status" tabindex="-1"></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============ 9 · Footer ============ -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="https://www.bejo.es/" class="logo neg" aria-label="Bejo Ibérica, inicio">
+          <img src="https://www.bejo.es/sites/bejo-drupal/files/Bejo-LG_1.svg" alt="Bejo" width="120" height="44" loading="lazy">
+          <span class="logo-text" aria-hidden="true">Bejo</span>
+        </a>
+        <p>Exploring nature never stops</p>
+        <a href="https://www.bejo.es/sites/bejo-drupal/files/media/files/ES-CatalogoGeneralEspana2628.pdf" class="btn btn-green" target="_blank" rel="noopener" data-track="descarga_catalogo_footer">Descargar catálogo (PDF)</a>
+      </div>
+      <details open><summary><h4>Variedades</h4></summary>
+        <ul>
+          <li><a href="https://www.bejo.es/variedades">Allium</a></li>
+          <li><a href="https://www.bejo.es/variedades">Brásicas</a></li>
+          <li><a href="https://www.bejo.es/variedades">Cultivos de hoja</a></li>
+          <li><a href="https://www.bejo.es/variedades">Cultivos de fruto</a></li>
+          <li><a href="https://www.bejo.es/variedades">Cultivos de raíz</a></li>
+          <li><a href="https://www.bejo.es/ecologico">Ecológico</a></li>
+          <li><a href="https://www.bejo.es/conoce-nuestros-microbulbos-de-cebolla">Microbulbos de cebolla</a></li>
+        </ul>
+      </details>
+      <details open><summary><h4>Bejo</h4></summary>
+        <ul>
+          <li><a href="https://www.bejo.es/bejo-mundo-exploring-nature-never-stops">¿Qué es Bejo?</a></li>
+          <li><a href="https://www.bejo.es/historia-de-bejo-iberica">Bejo Ibérica</a></li>
+          <li><a href="https://www.bejo.es/revista">Revista</a></li>
+          <li><a href="https://www.bejo.es/socios">Socios</a> · <a href="https://www.bejo.es/aevae">AEVAE</a></li>
+          <li><a href="https://www.bejo.es/terminos-y-declaraciones">Certificados</a></li>
+          <li><a href="https://www.bejo.es/careers">Trabaja con nosotros</a></li>
+          <li><a href="https://www.bejo.com/" target="_blank" rel="noopener">bejo.com <span class="sr-only">(se abre en pestaña nueva)</span>↗</a></li>
+        </ul>
+      </details>
+      <details open><summary><h4>Contacto</h4></summary>
+        <address>
+          <ul>
+            <li>Bejo Zaden Ibérica, S.L.U.</li>
+            <li>Calle del Hervidero, 15<br>28750 San Agustín del Guadalix (Madrid)</li>
+            <li><a href="tel:+34916587072" data-track="llamar_footer">+34 91 658 70 72</a></li>
+            <li><a href="mailto:info@bejo.es">info@bejo.es</a></li>
+          </ul>
+          <div class="social">
+            <a href="https://www.linkedin.com/company/bejoespana/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h4v11H4zM6 3a2 2 0 110 4 2 2 0 010-4zM10 9h3.8v1.6h.1c.5-1 1.8-1.9 3.7-1.9 3.9 0 4.4 2.4 4.4 5.6V20h-4v-4.9c0-1.2 0-2.7-1.7-2.7s-2.3 1.3-2.3 2.6V20h-4z"/></svg></a>
+            <a href="https://www.instagram.com/bejoespana/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm0 2a3 3 0 00-3 3v10a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3zm5 3.5a4.5 4.5 0 110 9 4.5 4.5 0 010-9zm0 2a2.5 2.5 0 100 5 2.5 2.5 0 000-5zM17.3 5.4a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"/></svg></a>
+            <a href="https://www.youtube.com/channel/UCln8HXi0CUPpkFVuDEpy3uQ" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M23 7.2a3 3 0 00-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 001 7.2 31 31 0 00.6 12a31 31 0 00.4 4.8 3 3 0 002.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 002.1-2.1 31 31 0 00.4-4.8 31 31 0 00-.4-4.8zM9.7 15.1V8.9l5.8 3.1z"/></svg></a>
+            <a href="https://www.facebook.com/BejoEspana/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8.5V6.8c0-.8.5-1 1-1h2.5V2H14c-3.4 0-4.5 2.2-4.5 4.6v1.9H7V12h2.5v10H14V12h3l.5-3.5z"/></svg></a>
+            <a href="https://www.twitter.com/BejoEspana" target="_blank" rel="noopener" aria-label="X (Twitter)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.7 3h3.1l-6.8 7.8L22 21h-6.3l-4.9-6.4L5.2 21H2.1l7.3-8.3L1.7 3h6.4l4.4 5.8zm-1.1 16.2h1.7L7.5 4.7H5.7z"/></svg></a>
+          </div>
+        </address>
+      </details>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year">2026</span> Bejo Zaden Ibérica, S.L.U.</span>
+      <nav aria-label="Legal">
+        <a href="https://www.bejo.es/terminos-y-declaraciones">Aviso legal</a>
+        <a href="https://www.bejo.es/terminos-y-declaraciones">Privacidad</a>
+        <a href="https://www.bejo.es/terminos-y-declaraciones">Cookies</a>
+        <a href="https://www.bejo.com/countries">Bejo en el mundo</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<!-- CTA fija en móvil -->
+<div class="sticky-cta" id="stickyCta" aria-label="Contacto rápido">
+  <a href="#tecnico" class="btn btn-green" data-track="cta_sticky_tecnico">Hablar con mi técnico</a>
+  <a href="tel:+34916587072" class="btn btn-call" id="stickyCall" data-track="cta_sticky_llamar">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2"/></svg>Llamar</a>
+</div>
+
+<script>
+/* ==========================================================================
+   Bejo Ibérica · Landing bejo.es — interacción
+   ========================================================================== */
+(function () {
+  'use strict';
+
+  /* ------------------------------------------------------------------
+     CONFIGURACIÓN (editar antes de lanzar)
+     ------------------------------------------------------------------ */
+  var CONFIG = {
+    // Endpoint que recibe el formulario por POST (JSON). Ejemplos:
+    //   Formspree:  'https://formspree.io/f/xxxxxxx'
+    //   CRM/propio: 'https://www.bejo.es/api/contacto'
+    // Si se deja vacío, la consulta se prepara en el cliente de correo del usuario.
+    formEndpoint: '',
+    defaultEmail: 'info@bejo.es',
+    defaultPhone: '+34916587072',
+    defaultPhoneTxt: '91 658 70 72',
+    whatsapp: 'https://wa.me/message/UYOLJTFTJJBNB1'
+  };
+
+  // Técnicos por zona. Rellenar nombre, teléfono y email reales de cada técnico.
+  // Mientras un campo esté vacío se muestra el contacto central de Bejo Ibérica.
+  var TECNICOS = {
+    'Sureste':                     { nombre: '', telefono: '', email: '' },
+    'Andalucía':                   { nombre: '', telefono: '', email: '' },
+    'Centro':                      { nombre: '', telefono: '', email: '' },
+    'Valle del Ebro y País Vasco': { nombre: '', telefono: '', email: '' },
+    'Levante y Baleares':          { nombre: '', telefono: '', email: '' },
+    'Castilla y León':             { nombre: '', telefono: '', email: '' },
+    'Noroeste':                    { nombre: '', telefono: '', email: '' },
+    'Cataluña':                    { nombre: '', telefono: '', email: '' },
+    'Extremadura':                 { nombre: '', telefono: '', email: '' },
+    'Canarias':                    { nombre: '', telefono: '', email: '' }
+  };
+
+  // Provincias: [nombre, código, columna, fila, zona] — columna/fila para el mapa de teselas
+  var PROVINCIAS = [
+    ['A Coruña','C',0,0,'Noroeste'],['Lugo','LU',1,0,'Noroeste'],['Asturias','O',2,0,'Noroeste'],['Cantabria','S',3,0,'Noroeste'],
+    ['Bizkaia','BI',4,0,'Valle del Ebro y País Vasco'],['Gipuzkoa','SS',5,0,'Valle del Ebro y País Vasco'],
+    ['Pontevedra','PO',0,1,'Noroeste'],['Ourense','OR',1,1,'Noroeste'],['León','LE',2,1,'Castilla y León'],['Palencia','P',3,1,'Castilla y León'],
+    ['Burgos','BU',4,1,'Castilla y León'],['Álava','VI',5,1,'Valle del Ebro y País Vasco'],['Navarra','NA',6,1,'Valle del Ebro y País Vasco'],
+    ['Huesca','HU',7,1,'Valle del Ebro y País Vasco'],['Lleida','L',8,1,'Cataluña'],['Girona','GI',9,1,'Cataluña'],
+    ['Zamora','ZA',1,2,'Castilla y León'],['Valladolid','VA',2,2,'Castilla y León'],['Segovia','SG',3,2,'Castilla y León'],['Soria','SO',4,2,'Castilla y León'],
+    ['La Rioja','LO',5,2,'Valle del Ebro y País Vasco'],['Zaragoza','Z',6,2,'Valle del Ebro y País Vasco'],['Tarragona','T',8,2,'Cataluña'],['Barcelona','B',9,2,'Cataluña'],
+    ['Salamanca','SA',1,3,'Castilla y León'],['Ávila','AV',2,3,'Castilla y León'],['Madrid','M',3,3,'Centro'],['Guadalajara','GU',4,3,'Centro'],
+    ['Cuenca','CU',5,3,'Centro'],['Teruel','TE',6,3,'Valle del Ebro y País Vasco'],['Castellón','CS',7,3,'Levante y Baleares'],['Illes Balears','PM',9,3,'Levante y Baleares'],
+    ['Cáceres','CC',1,4,'Extremadura'],['Toledo','TO',2,4,'Centro'],['Ciudad Real','CR',3,4,'Centro'],['Albacete','AB',4,4,'Centro'],['Valencia','V',5,4,'Levante y Baleares'],
+    ['Badajoz','BA',1,5,'Extremadura'],['Córdoba','CO',2,5,'Andalucía'],['Jaén','J',3,5,'Andalucía'],['Murcia','MU',4,5,'Sureste'],['Alicante','A',5,5,'Sureste'],
+    ['Huelva','H',1,6,'Andalucía'],['Sevilla','SE',2,6,'Andalucía'],['Granada','GR',3,6,'Andalucía'],['Almería','AL',4,6,'Sureste'],
+    ['Cádiz','CA',2,7,'Andalucía'],['Málaga','MA',3,7,'Andalucía'],
+    ['Las Palmas','GC',7,7,'Canarias'],['Santa Cruz de Tenerife','TF',6,7,'Canarias']
+  ];
+
+  // Índice del buscador (cultivos, variedades y contenidos)
+  var SEARCH = [
+    { t: 'Allium', s: 'Cebolla, puerro, microbulbos', k: 'cebolla puerro chalota allium microbulbo', crop: 'allium' },
+    { t: 'Brásicas', s: 'Coliflor, brócoli, coles', k: 'brasicas coliflor brocoli col repollo lombarda kale berza', crop: 'brasicas' },
+    { t: 'Cultivos de hoja', s: 'Lechuga, apio, kale', k: 'hoja lechuga iceberg batavia apio escarola endivia kale', crop: 'hoja' },
+    { t: 'Cultivos de fruto', s: 'Pepino, calabacín, judía', k: 'fruto pepino calabacin judia', crop: 'fruto' },
+    { t: 'Cultivos de raíz', s: 'Zanahoria, remolacha, hinojo', k: 'raiz zanahoria remolacha hinojo chirivia', crop: 'raiz' },
+    { t: 'Ecológico', s: 'Semilla ecológica · Right from the start', k: 'ecologico organico bio eco', crop: 'eco' },
+    { t: 'Revolution', s: 'Cebolla amarilla de día corto', k: 'revolution cebolla', href: '#var-revolution' },
+    { t: 'Bonnice', s: 'Lechuga iceberg · Bremia 29-40', k: 'bonnice lechuga iceberg', href: '#var-bonnice' },
+    { t: 'Newlyn', s: 'Coliflor de invierno', k: 'newlyn coliflor', href: '#var-newlyn' },
+    { t: 'B-Mox®', s: 'Tecnología de semilla', k: 'bmox b-mox pregerminacion tecnologia', href: 'https://www.bejo.es/magazine/b-moxr' },
+    { t: 'Microbulbos de cebolla', s: 'Tecnología de semilla', k: 'microbulbos bulbillos cebolla', href: 'https://www.bejo.es/conoce-nuestros-microbulbos-de-cebolla' },
+    { t: 'Cropalyser', s: 'Herramienta de seguimiento del cultivo', k: 'cropalyser app herramienta', href: 'https://www.bejo.es/magazine/cropalyser' },
+    { t: 'Catálogo general 2026–2028 (PDF)', s: 'Descargar', k: 'catalogo pdf descargar', href: 'https://www.bejo.es/sites/bejo-drupal/files/media/files/ES-CatalogoGeneralEspana2628.pdf' },
+    { t: 'Hablar con mi técnico', s: 'Contacto por zona', k: 'contacto tecnico telefono llamar comercial zona', href: '#tecnico' },
+    { t: 'Trabaja con nosotros', s: 'Empleo en Bejo', k: 'empleo trabajo careers', href: 'https://www.bejo.es/careers' }
+  ];
+
+  var $ = function (s, c) { return (c || document).querySelector(s); };
+  var $$ = function (s, c) { return Array.prototype.slice.call((c || document).querySelectorAll(s)); };
+  var norm = function (s) { return (s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, ''); };
+
+  /* ------------------------------------------------------------------
+     Analítica: eventos al dataLayer (listo para Google Tag Manager)
+     ------------------------------------------------------------------ */
+  window.dataLayer = window.dataLayer || [];
+  function track(event, params) {
+    var o = { event: event }; for (var k in params) o[k] = params[k];
+    window.dataLayer.push(o);
+  }
+  document.addEventListener('click', function (e) {
+    var el = e.target.closest('[data-track]');
+    if (el) track('bejo_click', { accion: el.getAttribute('data-track'), destino: el.getAttribute('href') || '' });
+  });
+
+  /* ------------------------------------------------------------------
+     Imágenes: si una foto no carga, mostrar el bloque de reserva
+     ------------------------------------------------------------------ */
+  $$('img[data-fallback]').forEach(function (img) {
+    function fail() { var p = img.closest('.photo') || img.parentElement; p.classList.add('is-empty'); }
+    if (img.complete && img.naturalWidth === 0) fail();
+    img.addEventListener('error', fail);
+  });
+  $$('.logo img').forEach(function (img) {
+    function fail() { img.closest('.logo').classList.add('is-text'); }
+    if (img.complete && img.naturalWidth === 0) fail();
+    img.addEventListener('error', fail);
+  });
+
+  /* ------------------------------------------------------------------
+     Header: sombra al hacer scroll + menú móvil
+     ------------------------------------------------------------------ */
+  var header = $('.header');
+  var onScroll = function () { header.classList.toggle('scrolled', window.scrollY > 8); };
+  window.addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+  var menuBtn = $('#menuBtn'), menu = $('#mobileMenu');
+  function toggleMenu(open) {
+    menu.classList.toggle('open', open);
+    menuBtn.setAttribute('aria-expanded', open);
+    menuBtn.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú');
+    document.body.style.overflow = open ? 'hidden' : '';
+  }
+  menuBtn.addEventListener('click', function () { toggleMenu(!menu.classList.contains('open')); });
+  menu.addEventListener('click', function (e) { if (e.target.closest('a')) toggleMenu(false); });
+  $('#searchBtn').addEventListener('click', function () { toggleMenu(true); setTimeout(function () { $('#mobSearch').focus(); }, 260); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') toggleMenu(false); });
+
+  /* ------------------------------------------------------------------
+     Buscador de cultivos y variedades
+     ------------------------------------------------------------------ */
+  function goTo(item) {
+    toggleMenu(false);
+    track('bejo_busqueda', { termino: item.t });
+    if (item.crop) {
+      var tile = $('[data-crop="' + item.crop + '"]');
+      $('#variedades').scrollIntoView({ behavior: 'smooth' });
+      tile.classList.add('flash');
+      tile.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+      setTimeout(function () { tile.classList.remove('flash'); }, 2200);
+      tile.focus({ preventScroll: true });
+      return;
+    }
+    if (item.href.charAt(0) === '#') { $(item.href).scrollIntoView({ behavior: 'smooth' }); return; }
+    window.location.href = item.href;
+  }
+  $$('[data-search]').forEach(function (form) {
+    var input = $('input', form), list = $('.search-results', form), results = [], idx = -1;
+    function render() {
+      var q = norm(input.value.trim());
+      results = !q ? [] : SEARCH.filter(function (i) { return norm(i.t + ' ' + i.k).indexOf(q) > -1; }).slice(0, 7);
+      if (q && !results.length) results = [{ t: 'Ver todas las variedades', s: 'Sin resultados para «' + input.value.trim() + '» · ir al buscador de bejo.es', href: 'https://www.bejo.es/variedades' }];
+      idx = -1;
+      list.innerHTML = results.map(function (r, i) {
+        return '<li role="option" id="' + list.id + '-' + i + '"><a href="#" data-i="' + i + '">' + r.t + '<small>' + r.s + '</small></a></li>';
+      }).join('');
+      list.classList.toggle('open', results.length > 0);
+      input.setAttribute('aria-expanded', results.length > 0);
+    }
+    function highlight() {
+      $$('a', list).forEach(function (a, i) { a.classList.toggle('active', i === idx); });
+      if (idx > -1) input.setAttribute('aria-activedescendant', list.id + '-' + idx); else input.removeAttribute('aria-activedescendant');
+    }
+    input.addEventListener('input', render);
+    input.addEventListener('keydown', function (e) {
+      if (!results.length) return;
+      if (e.key === 'ArrowDown') { idx = (idx + 1) % results.length; highlight(); e.preventDefault(); }
+      if (e.key === 'ArrowUp') { idx = (idx - 1 + results.length) % results.length; highlight(); e.preventDefault(); }
+    });
+    list.addEventListener('mousedown', function (e) {
+      var a = e.target.closest('a'); if (!a) return;
+      e.preventDefault(); goTo(results[+a.getAttribute('data-i')]); list.classList.remove('open'); input.value = '';
+    });
+    form.addEventListener('submit', function (e) {
+      e.preventDefault(); if (!results.length) render(); if (!results.length) return;
+      goTo(results[idx > -1 ? idx : 0]); list.classList.remove('open'); input.value = ''; input.blur();
+    });
+    input.addEventListener('blur', function () { setTimeout(function () { list.classList.remove('open'); input.setAttribute('aria-expanded', 'false'); }, 150); });
+  });
+
+  /* ------------------------------------------------------------------
+     Técnico de zona: selector de provincia + mapa de teselas
+     ------------------------------------------------------------------ */
+  var zoneSel = $('#zoneSelect'), formSel = $('#f-prov');
+  var byName = {};
+  PROVINCIAS.slice().sort(function (a, b) { return a[0].localeCompare(b[0], 'es'); }).forEach(function (p) {
+    byName[p[0]] = p;
+    [zoneSel, formSel].forEach(function (s) {
+      var o = document.createElement('option'); o.value = p[0]; o.textContent = p[0]; s.appendChild(o);
+    });
+  });
+
+  // Mapa SVG
+  var S = 40, G = 4, NS = 'http://www.w3.org/2000/svg';
+  var svg = document.createElementNS(NS, 'svg');
+  svg.setAttribute('viewBox', '0 0 ' + (10 * (S + G)) + ' ' + (8 * (S + G)));
+  svg.setAttribute('role', 'group');
+  svg.setAttribute('aria-label', 'Provincias de España agrupadas por zona técnica');
+  var inset = document.createElementNS(NS, 'rect');
+  inset.setAttribute('class', 'map-inset');
+  inset.setAttribute('x', 6 * (S + G) - 4); inset.setAttribute('y', 7 * (S + G) - 4);
+  inset.setAttribute('width', 2 * (S + G) + 4); inset.setAttribute('height', S + 8);
+  svg.appendChild(inset);
+  PROVINCIAS.forEach(function (p) {
+    var g = document.createElementNS(NS, 'g');
+    g.setAttribute('class', 'tile'); g.setAttribute('tabindex', '0'); g.setAttribute('role', 'button');
+    g.setAttribute('aria-label', p[0] + ', zona ' + p[4]); g.dataset.prov = p[0]; g.dataset.zone = p[4];
+    var r = document.createElementNS(NS, 'rect');
+    r.setAttribute('x', p[2] * (S + G)); r.setAttribute('y', p[3] * (S + G));
+    r.setAttribute('width', S); r.setAttribute('height', S); r.setAttribute('rx', 3);
+    var t = document.createElementNS(NS, 'text');
+    t.setAttribute('x', p[2] * (S + G) + S / 2); t.setAttribute('y', p[3] * (S + G) + S / 2);
+    t.textContent = p[1];
+    var title = document.createElementNS(NS, 'title'); title.textContent = p[0] + ' · ' + p[4];
+    g.appendChild(title); g.appendChild(r); g.appendChild(t); svg.appendChild(g);
+  });
+  var mapBox = $('#map'); mapBox.appendChild(svg);
+  var cap = document.createElement('p'); cap.className = 'map-caption'; cap.textContent = 'Pulsa tu provincia en el mapa o elígela en la lista.';
+  mapBox.appendChild(cap);
+  svg.addEventListener('click', function (e) { var g = e.target.closest('.tile'); if (g) setProvince(g.dataset.prov, true); });
+  svg.addEventListener('keydown', function (e) {
+    var g = e.target.closest('.tile'); if (g && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); setProvince(g.dataset.prov, true); }
+  });
+
+  function telHref(t) { return 'tel:' + t.replace(/[^\d+]/g, ''); }
+  function setProvince(name, fromUser) {
+    var p = byName[name];
+    zoneSel.value = p ? name : ''; formSel.value = p ? name : '';
+    $$('.tile', svg).forEach(function (g) {
+      g.classList.toggle('active', !!p && g.dataset.prov === name);
+      g.classList.toggle('in-zone', !!p && g.dataset.zone === p[4] && g.dataset.prov !== name);
+    });
+    var card = $('#techCard');
+    if (!p) {
+      card.dataset.empty = 'true';
+      $('#techName').textContent = 'Equipo técnico-comercial de Bejo Ibérica';
+      $('#techZone').textContent = 'Elige tu provincia para ver tu zona';
+      updateContact(CONFIG.defaultPhone, CONFIG.defaultPhoneTxt, CONFIG.defaultEmail, '');
+      return;
+    }
+    var zone = p[4], tec = TECNICOS[zone] || {};
+    card.dataset.empty = 'false';
+    $('#techName').textContent = tec.nombre || 'Técnico de zona · ' + zone;
+    $('#techZone').textContent = 'Zona ' + zone + ' · ' + name + (tec.nombre ? '' : ' · te atiende el equipo técnico-comercial');
+    var phone = tec.telefono || CONFIG.defaultPhone;
+    updateContact(phone, tec.telefono ? tec.telefono : CONFIG.defaultPhoneTxt, tec.email || CONFIG.defaultEmail, zone + ' (' + name + ')');
+    if (fromUser) track('bejo_zona', { provincia: name, zona: zone });
+  }
+  function updateContact(phone, phoneTxt, email, zoneLabel) {
+    $('#techPhone').href = telHref(phone);
+    $('#techPhoneTxt').textContent = phoneTxt;
+    $('#stickyCall').href = telHref(phone);
+    var subject = 'Consulta para mi técnico de zona' + (zoneLabel ? ' – ' + zoneLabel : '');
+    $('#techMail').href = 'mailto:' + email + '?subject=' + encodeURIComponent(subject);
+    $('#techMail').dataset.email = email;
+  }
+  zoneSel.addEventListener('change', function () { setProvince(zoneSel.value, true); });
+  formSel.addEventListener('change', function () { setProvince(formSel.value, true); });
+
+  // Recordar la provincia elegida (comodidad por visitante)
+  try { var saved = localStorage.getItem('bejo_provincia'); if (saved && byName[saved]) setProvince(saved, false); } catch (err) {}
+  [zoneSel, formSel].forEach(function (s) {
+    s.addEventListener('change', function () { try { localStorage.setItem('bejo_provincia', s.value); } catch (err) {} });
+  });
+
+  /* ------------------------------------------------------------------
+     Formulario: 3 campos obligatorios (nombre, cultivo, teléfono o email)
+     ------------------------------------------------------------------ */
+  var form = $('#contactForm'), ok = $('#formOk'), errBox = $('#formErr');
+  var reEmail = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+  function validContact(v) {
+    v = v.trim();
+    if (v.indexOf('@') > -1) return reEmail.test(v);
+    var digits = v.replace(/[^\d]/g, '');
+    return digits.length >= 9 && digits.length <= 13 && /^[\d\s+().-]+$/.test(v);
+  }
+  function checkField(el) {
+    var bad = el.id === 'f-contact' ? !validContact(el.value) : !el.value.trim();
+    el.closest('.field').classList.toggle('error', bad);
+    el.setAttribute('aria-invalid', bad);
+    return !bad;
+  }
+  $$('[required]', form).forEach(function (el) {
+    el.addEventListener(el.tagName === 'SELECT' ? 'change' : 'blur', function () { if (el.closest('.field').classList.contains('error') || el.value) checkField(el); });
+    el.addEventListener('input', function () { if (el.closest('.field').classList.contains('error')) checkField(el); });
+  });
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    ok.classList.remove('show');
+    var first = null;
+    $$('[required]', form).forEach(function (el) { if (!checkField(el) && !first) first = el; });
+    if (first) { errBox.classList.add('show'); first.focus(); track('bejo_form_error', {}); return; }
+    errBox.classList.remove('show');
+    if (form.web.value) return; // honeypot anti-spam
+
+    var prov = form.provincia.value || zoneSel.value;
+    var zone = prov && byName[prov] ? byName[prov][4] : '';
+    var data = {
+      nombre: form.nombre.value.trim(), cultivo: form.cultivo.value, contacto: form.contacto.value.trim(),
+      provincia: prov, zona: zone, mensaje: form.mensaje.value.trim(), origen: 'landing bejo.es', fecha: new Date().toISOString()
+    };
+    var btn = $('button[type="submit"]', form);
+
+    function done(msg) {
+      ok.textContent = msg; ok.classList.add('show'); ok.focus();
+      track('bejo_lead', { cultivo: data.cultivo, zona: data.zona || 'sin zona' });
+      form.reset(); if (prov) formSel.value = prov;
+      btn.disabled = false; btn.textContent = 'Enviar consulta al técnico';
+    }
+
+    if (CONFIG.formEndpoint) {
+      btn.disabled = true; btn.textContent = 'Enviando…';
+      fetch(CONFIG.formEndpoint, { method: 'POST', headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }, body: JSON.stringify(data) })
+        .then(function (r) { if (!r.ok) throw new Error(r.status); done('¡Gracias, ' + data.nombre + '! Consulta enviada. Tu técnico de zona te responde en 48 h laborables.'); })
+        .catch(function () {
+          btn.disabled = false; btn.textContent = 'Enviar consulta al técnico';
+          errBox.textContent = 'No hemos podido enviar la consulta. Llámanos al ' + CONFIG.defaultPhoneTxt + ' o escríbenos a ' + CONFIG.defaultEmail + '.';
+          errBox.classList.add('show'); errBox.focus();
+        });
+      return;
+    }
+    // Sin endpoint: preparar el correo con los datos ya rellenos
+    var to = (zone && TECNICOS[zone] && TECNICOS[zone].email) || CONFIG.defaultEmail;
+    var body = 'Nombre: ' + data.nombre + '\nCultivo: ' + data.cultivo + '\nContacto: ' + data.contacto +
+      (data.provincia ? '\nProvincia: ' + data.provincia + ' (zona ' + data.zona + ')' : '') +
+      (data.mensaje ? '\n\nMensaje:\n' + data.mensaje : '');
+    window.location.href = 'mailto:' + to + '?subject=' + encodeURIComponent('Consulta técnico de zona – ' + data.cultivo) + '&body=' + encodeURIComponent(body);
+    done('Hemos preparado tu consulta en tu aplicación de correo: solo tienes que pulsar «Enviar». Tu técnico de zona te responde en 48 h laborables.');
+  });
+
+  /* ------------------------------------------------------------------
+     Barra fija móvil: se oculta cuando el bloque de contacto está a la vista
+     ------------------------------------------------------------------ */
+  var sticky = $('#stickyCta');
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) { sticky.classList.toggle('hide', en.isIntersecting); });
+    }, { threshold: 0.15 }).observe($('#tecnico'));
+  }
+
+  /* ------------------------------------------------------------------
+     Pie: año y acordeones (abiertos en escritorio, plegados en móvil)
+     ------------------------------------------------------------------ */
+  $('#year').textContent = new Date().getFullYear();
+  var mq = window.matchMedia('(max-width:860px)');
+  function syncFooter() { $$('.footer details').forEach(function (d) { d.open = !mq.matches; }); }
+  syncFooter();
+  if (mq.addEventListener) mq.addEventListener('change', syncFooter); else mq.addListener(syncFooter);
+})();
+
+</script>
+</body>
+</html>
