@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bejo Ibérica — Landing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <meta name="color-scheme" content="light dark">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="https://www.bejo.es/">
+        <img src="https://www.bejo.es/sites/default/files/bejo_logo_horizontal.png" alt="Bejo Ibérica" class="logo">
+      </a>
+      <nav class="main-nav">
+        <a href="#buscar">Buscar variedad</a>
+        <a href="#cultivos">Cultivos</a>
+        <a href="#noticias">Noticias</a>
+        <a href="#contacto" class="cta">Contactar</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Abrir menú">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="buscar" aria-label="Buscar variedad y contactar técnico">
+      <div class="wrap hero-grid">
+        <div class="hero-left">
+          <h1>Variedades adaptadas a tu zona. Contacta a tu técnico.</h1>
+          <p class="lead">Encuentra la variedad adecuada para tu campaña o habla directamente con el técnico de tu zona para asesoramiento.</p>
+
+          <div class="hero-ctas">
+            <form id="searchForm" class="search-form" aria-label="Buscar por cultivo">
+              <label for="cultivo">Buscar por cultivo</label>
+              <select id="cultivo" name="cultivo" required>
+                <option value="">Selecciona un cultivo</option>
+                <option value="Allium">Allium</option>
+                <option value="Brásicas">Brásicas</option>
+                <option value="Hoja">Hoja</option>
+                <option value="Fruto">Fruto</option>
+                <option value="Raíz">Raíz</option>
+                <option value="Ecológico">Ecológico</option>
+              </select>
+              <button class="btn btn-green" type="submit">Buscar variedad</button>
+            </form>
+
+            <a href="#contacto" class="btn btn-outline" id="talkTech">Hablar con un técnico</a>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="hero-media" role="img" aria-label="Campo y prueba de variedades">
+            <!-- Placeholder image, reemplazar por imagen real -->
+            <img src="https://www.bejo.es/sites/default/files/styles/media_image/public/2023-10/FRUIT-ATTRACTION_2022.jpg" alt="Campo y variedades Bejo">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACCESOS POR CULTIVO -->
+    <section id="cultivos" class="section wrap">
+      <h2>Acceso por cultivo</h2>
+      <p class="muted">Accede rápidamente al grupo de cultivo que necesitas.</p>
+      <div class="grid grid-6">
+        <a class="card-link" href="#allium"><div class="card">
+          <div class="icon">🧅</div><strong>Allium</strong>
+        </div></a>
+        <a class="card-link" href="#brasicas"><div class="card">
+          <div class="icon">🥬</div><strong>Brásicas</strong>
+        </div></a>
+        <a class="card-link" href="#hoja"><div class="card">
+          <div class="icon">🌿</div><strong>Hoja</strong>
+        </div></a>
+        <a class="card-link" href="#fruto"><div class="card">
+          <div class="icon">🍅</div><strong>Fruto</strong>
+        </div></a>
+        <a class="card-link" href="#raiz"><div class="card">
+          <div class="icon">🥕</div><strong>Raíz</strong>
+        </div></a>
+        <a class="card-link" href="#ecologico"><div class="card">
+          <div class="icon">🌱</div><strong>Ecológico</strong>
+        </div></a>
+      </div>
+    </section>
+
+    <!-- VARIEDADES DESTACADAS -->
+    <section class="section alt" id="variedades">
+      <div class="wrap">
+        <h2>Variedades recomendadas para la campaña</h2>
+        <p class="muted">Casos reales y variedades testadas por nuestros técnicos.</p>
+        <div class="grid grid-3" id="varietyList">
+          <!-- Ejemplo de tarjetas; sustituir por datos reales si se proporcionan -->
+          <article class="var-card">
+            <img src="https://via.placeholder.com/600x360?text=Variedad+1" alt="Variedad A">
+            <div class="content">
+              <h3>Variedad A (Ejemplo)</h3>
+              <p>Alta resistencia y producción estable. Recomendado para secano.</p>
+              <a class="btn btn-sm" href="https://www.bejo.com/" target="_blank" rel="noopener">Ver ficha</a>
+            </div>
+          </article>
+
+          <article class="var-card">
+            <img src="https://via.placeholder.com/600x360?text=Variedad+2" alt="Variedad B">
+            <div class="content">
+              <h3>Variedad B (Ejemplo)</h3>
+              <p>Idónea para mercado fresco. Excelente vida postcosecha.</p>
+              <a class="btn btn-sm" href="https://www.bejo.com/" target="_blank" rel="noopener">Ver ficha</a>
+            </div>
+          </article>
+
+          <article class="var-card">
+            <img src="https://via.placeholder.com/600x360?text=Variedad+3" alt="Variedad C">
+            <div class="content">
+              <h3>Variedad C (Ejemplo)</h3>
+              <p>Alta sanidad y tolerancia a enfermedades del suelo.</p>
+              <a class="btn btn-sm" href="https://www.bejo.com/" target="_blank" rel="noopener">Ver ficha</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONFIANZA / PILARES -->
+    <section class="section wrap" id="confianza">
+      <h2>Por qué confiar en Bejo</h2>
+      <div class="grid grid-3">
+        <div class="pill">
+          <h3>Investigación y desarrollo</h3>
+          <p>Más de décadas de I+D para desarrollar variedades adaptadas a España y Portugal.</p>
+        </div>
+        <div class="pill">
+          <h3>Calidad de semilla</h3>
+          <p>Control estricto en producción y procesos para garantizar germinación y sanidad.</p>
+        </div>
+        <div class="pill">
+          <h3>Asesoramiento técnico</h3>
+          <p>Técnicos en campo que ayudan a elegir la mejor variedad para cada parcela.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECNOLOGÍA Y I+D -->
+    <section class="section alt" id="tecnologia">
+      <div class="wrap two-col">
+        <div>
+          <h2>Tecnología de semilla e I+D</h2>
+          <p>Invertimos constantemente en mejora genética y en prácticas de producción sostenible.</p>
+          <ul>
+            <li>Ensayos regionales en condiciones reales de cultivo.</li>
+            <li>Tecnologías para mejora de la tolerancia a estrés abiótico.</li>
+            <li>Programas de semillas ecológicas específicos.</li>
+          </ul>
+          <a class="btn" href="https://www.bejo.com/" target="_blank" rel="noopener">Ver más</a>
+        </div>
+        <div>
+          <img src="https://via.placeholder.com/800x500?text=I%26D+Bejo" alt="Laboratorio e I+D">
+        </div>
+      </div>
+    </section>
+
+    <!-- NOTICIAS -->
+    <section class="section wrap" id="noticias">
+      <h2>Actualidad</h2>
+      <div class="muted">Últimas noticias de Bejo España</div>
+      <div class="grid grid-3" id="newsList">
+        <!-- Noticias reales detectadas -->
+        <article class="news-card">
+          <a href="https://www.bejo.es/magazine/bejo-se-consolida-como-referente-en-genetica-e-innovacion" target="_blank" rel="noopener">
+            <img src="https://www.bejo.es/sites/default/files/styles/media_image/public/2023-10/FRUIT-ATTRACTION_2022.jpg" alt="Bejo se consolida como referente">
+            <div class="meta">08 Octubre, 2025</div>
+            <h3>Bejo se consolida como referente en genética e innovación</h3>
+          </a>
+        </article>
+
+        <article class="news-card">
+          <a href="https://www.bejo.es/magazine/las-variedades-de-lechuga-de-bejo-se-fortalecen-cada-vez-mas-frente-las-razas-de-bremia" target="_blank" rel="noopener">
+            <img src="https://via.placeholder.com/800x500?text=Lechuga+Bremia" alt="Lechuga y Bremia">
+            <div class="meta">01 Julio, 2024</div>
+            <h3>Las variedades de lechuga de Bejo se fortalecen frente a las razas de Bremia</h3>
+          </a>
+        </article>
+
+        <article class="news-card">
+          <a href="https://www.bejo.es/magazine/bejo-en-infoagro-exhibition-2025" target="_blank" rel="noopener">
+            <img src="https://via.placeholder.com/800x500?text=Infoagro+2025" alt="Bejo en Infoagro 2025">
+            <div class="meta">28 Mayo, 2025</div>
+            <h3>Bejo en Infoagro Exhibition 2025</h3>
+          </a>
+        </article>
+      </div>
+      <p class="muted small">Fuente: <a href="https://www.bejo.es/" target="_blank" rel="noopener">bejo.es</a></p>
+    </section>
+
+    <!-- CONTACTO / TÉCNICOS -->
+    <section class="section alt" id="contacto">
+      <div class="wrap">
+        <h2>Habla con tu técnico de zona</h2>
+        <p class="muted">Selecciona tu provincia para ver el técnico asignado y sus datos de contacto.</p>
+
+        <div class="contact-grid">
+          <div class="contact-left">
+            <label for="provincia">Selecciona tu provincia / zona</label>
+            <select id="provincia">
+              <option value="">Selecciona provincia o zona</option>
+            </select>
+
+            <div id="techCard" class="tech-card hidden">
+              <h3 id="techName">Nombre Técnico</h3>
+              <div><strong>Zona:</strong> <span id="techZone"></span></div>
+              <div><strong>Teléfono:</strong> <a id="techPhone" href="#"></a></div>
+              <div><strong>Email:</strong> <a id="techEmail" href="#"></a></div>
+            </div>
+
+            <div class="contact-form-wrap">
+              <h3>Contacta por formulario</h3>
+              <p class="muted small">Recibirás respuesta en un plazo de 48 horas laborables.</p>
+              <form id="contactForm" novalidate>
+                <label for="nombre">Nombre (obligatorio)</label>
+                <input id="nombre" name="nombre" type="text" required>
+
+                <label for="cultivoForm">Cultivo (obligatorio)</label>
+                <select id="cultivoForm" name="cultivoForm" required>
+                  <option value="">Selecciona cultivo</option>
+                  <option>Allium</option>
+                  <option>Brásicas</option>
+                  <option>Hoja</option>
+                  <option>Fruto</option>
+                  <option>Raíz</option>
+                  <option>Ecológico</option>
+                </select>
+
+                <label for="contacto">Teléfono o email (obligatorio)</label>
+                <input id="contacto" name="contacto" type="text" placeholder="Teléfono o email" required>
+
+                <button type="submit" class="btn btn-green">Enviar al técnico</button>
+                <div id="contactMsg" class="form-msg" aria-live="polite"></div>
+              </form>
+            </div>
+          </div>
+
+          <div class="contact-right">
+            <h4>Lista de técnicos (resumen)</h4>
+            <p class="muted small">Datos extraídos desde <a href="https://www.bejo.es/contacto" target="_blank" rel="noopener">bejo.es/contacto</a>. Si no aparece tu provincia, contacta a info@bejo.es.</p>
+
+            <ul id="techList" class="tech-list">
+              <!-- JS insertará la lista completa -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <small>© Bejo Ibérica — Landing demo. <a href="https://www.bejo.es/">bejo.es</a></small>
+    </div>
+  </footer>
+
+  <!-- Barra móvil fija -->
+  <div class="mobile-bar" id="mobileBar">
+    <button class="btn bar-btn" id="openContactBar">Hablar con mi técnico</button>
+    <a class="btn bar-btn call" href="tel:0034-900-000-000" id="callBtn">Llamar</a>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
