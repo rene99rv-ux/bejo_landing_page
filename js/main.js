@@ -92,7 +92,11 @@
      Imágenes: si una foto no carga, mostrar el bloque de reserva
      ------------------------------------------------------------------ */
   $$('img[data-fallback]').forEach(function (img) {
-    function fail() { var p = img.closest('.photo') || img.parentElement; p.classList.add('is-empty'); }
+    function fail() {
+      // Primero prueba la foto alternativa (data-alt-src), si la hay
+      if (img.dataset.altSrc && !img.dataset.altTried) { img.dataset.altTried = '1'; img.src = img.dataset.altSrc; return; }
+      var p = img.closest('.photo') || img.parentElement; p.classList.add('is-empty');
+    }
     if (img.complete && img.naturalWidth === 0) fail();
     img.addEventListener('error', fail);
   });
