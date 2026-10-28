@@ -32,8 +32,8 @@ js/main.js      Menú, buscador, mapa de zonas, formulario, analítica
 
 1. **Técnicos reales:** en `js/main.js` hay que rellenar `TECNICOS` con el nombre, el teléfono y el email de cada zona. Mientras estén vacíos, se muestra el contacto central (91 658 70 72 · info@bejo.es).
 2. **Envío del formulario:** en `CONFIG.formEndpoint` va la URL que recibirá el formulario (Formspree, CRM o API propia). Si se deja vacío, la consulta se abre ya redactada en el cliente de correo del usuario.
-3. **Fotos y logo:** ahora se cargan desde bejo.es. En producción conviene copiarlos a `/assets`. La coliflor Newlyn necesita una foto real.
-4. **Fichas de variedad:** Bonnice y Newlyn enlazan al catálogo de variedades. Cuando existan, hay que cambiarlo por la URL de cada ficha.
+3. **Fotos y logo:** ahora se cargan desde bejo.es (la foto de Newlyn ya está en `/assets`). En producción conviene copiar el resto a `/assets`.
+4. **Fichas de variedad:** Revolution, Bonnice y Newlyn ya enlazan a su ficha en bejo.es.
 5. **Analítica:** cada CTA envía un evento a `dataLayer` (`bejo_click`, `bejo_zona`, `bejo_lead`, `bejo_busqueda`). Falta añadir el contenedor de Google Tag Manager y el banner de cookies.
 
 ## Ver en local
