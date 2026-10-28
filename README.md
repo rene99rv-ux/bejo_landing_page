@@ -31,7 +31,7 @@ js/mapa-provincias.js  Fronteras simplificadas de las 50 provincias para el mapa
 
 ## Antes de lanzar
 
-1. **Técnicos reales:** en `js/main.js` hay que rellenar `TECNICOS` con el nombre, el teléfono y el email de cada zona. Mientras estén vacíos, se muestra el contacto central (91 658 70 72 · info@bejo.es).
+1. **Técnicos y distribuidores:** `TECNICOS` en `js/main.js` ya tiene los 9 técnicos de zona con su teléfono y email, y los 4 distribuidores (Antoñanzas, Santamarta, Monso y Metal Agrícola). Para los distribuidores se muestra el contacto central (91 658 70 72 · info@bejo.es) hasta tener sus datos. La asignación de provincias está en `PROVINCIAS`.
 2. **Envío del formulario:** en `CONFIG.formEndpoint` va la URL que recibirá el formulario (Formspree, CRM o API propia). Si se deja vacío, la consulta se abre ya redactada en el cliente de correo del usuario.
 3. **Fotos y logo:** ahora se cargan desde bejo.es (la foto de Newlyn ya está en `/assets`). En producción conviene copiar el resto a `/assets`.
 4. **Fichas de variedad:** Revolution, Bonnice y Newlyn ya enlazan a su ficha en bejo.es.

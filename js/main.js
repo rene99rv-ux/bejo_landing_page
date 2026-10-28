@@ -19,37 +19,41 @@
     whatsapp: 'https://wa.me/message/UYOLJTFTJJBNB1'
   };
 
-  // Técnicos por zona. Rellenar nombre, teléfono y email reales de cada técnico.
-  // Mientras un campo esté vacío se muestra el contacto central de Bejo Ibérica.
+  // Técnicos por zona (1-9) y distribuidores (A-D) de Bejo Ibérica.
+  // Los distribuidores no tienen contacto propio en la web: se muestra el contacto central.
   var TECNICOS = {
-    'Sureste':                     { nombre: '', telefono: '', email: '' },
-    'Andalucía':                   { nombre: '', telefono: '', email: '' },
-    'Centro':                      { nombre: '', telefono: '', email: '' },
-    'Valle del Ebro y País Vasco': { nombre: '', telefono: '', email: '' },
-    'Levante y Baleares':          { nombre: '', telefono: '', email: '' },
-    'Castilla y León':             { nombre: '', telefono: '', email: '' },
-    'Noroeste':                    { nombre: '', telefono: '', email: '' },
-    'Cataluña':                    { nombre: '', telefono: '', email: '' },
-    'Extremadura':                 { nombre: '', telefono: '', email: '' },
-    'Canarias':                    { nombre: '', telefono: '', email: '' }
+    '1': { nombre: 'Félix Andrés',        especialidad: 'Especialista en puerro',               telefono: '+34629264656', telefonoTxt: '629 264 656', email: 'f.andres@bejo.es' },
+    '2': { nombre: 'Feliu Cusidó',        especialidad: 'Especialista en cultivo ecológico',    telefono: '+34618746499', telefonoTxt: '618 746 499', email: 'f.cusido@bejo.es' },
+    '3': { nombre: 'Miriam Sánchez',      especialidad: '',                                     telefono: '+34679228367', telefonoTxt: '679 228 367', email: 'm.sanchez@bejo.es' },
+    '4': { nombre: 'Juan Carlos Sánchez', especialidad: 'Especialista en microbulbos de cebolla', telefono: '+34629084931', telefonoTxt: '629 084 931', email: 'j.sanchez@bejo.es' },
+    '5': { nombre: 'Manuel Romero',       especialidad: '',                                     telefono: '+34609500189', telefonoTxt: '609 500 189', email: 'm.romero@bejo.es' },
+    '6': { nombre: 'Damián Pallarés',     especialidad: '',                                     telefono: '+34629085633', telefonoTxt: '629 085 633', email: 'd.pallares@bejo.es' },
+    '7': { nombre: 'Javier Perales',      especialidad: '',                                     telefono: '+34669676503', telefonoTxt: '669 676 503', email: 'j.perales@bejo.es' },
+    '8': { nombre: 'Miguel Ángel Teruel', especialidad: '',                                     telefono: '+34699923519', telefonoTxt: '699 923 519', email: 'm.teruel@bejo.es' },
+    '9': { nombre: 'Luis Carreira',       especialidad: '',                                     telefono: '+34689265594', telefonoTxt: '689 265 594', email: 'l.carreira@bejo.es' },
+    'A': { distribuidor: 'Antoñanzas' },
+    'B': { distribuidor: 'Santamarta' },
+    'C': { distribuidor: 'Monso' },
+    'D': { distribuidor: 'Metal Agrícola' }
   };
+  function zonaLabel(z) { var t = TECNICOS[z] || {}; return t.distribuidor ? 'distribuidor ' + t.distribuidor : 'zona ' + z; }
 
   // Provincias: [nombre, código, columna, fila, zona] — el código es la etiqueta del mapa
   var PROVINCIAS = [
-    ['A Coruña','C',0,0,'Noroeste'],['Lugo','LU',1,0,'Noroeste'],['Asturias','O',2,0,'Noroeste'],['Cantabria','S',3,0,'Noroeste'],
-    ['Bizkaia','BI',4,0,'Valle del Ebro y País Vasco'],['Gipuzkoa','SS',5,0,'Valle del Ebro y País Vasco'],
-    ['Pontevedra','PO',0,1,'Noroeste'],['Ourense','OR',1,1,'Noroeste'],['León','LE',2,1,'Castilla y León'],['Palencia','P',3,1,'Castilla y León'],
-    ['Burgos','BU',4,1,'Castilla y León'],['Álava','VI',5,1,'Valle del Ebro y País Vasco'],['Navarra','NA',6,1,'Valle del Ebro y País Vasco'],
-    ['Huesca','HU',7,1,'Valle del Ebro y País Vasco'],['Lleida','L',8,1,'Cataluña'],['Girona','GI',9,1,'Cataluña'],
-    ['Zamora','ZA',1,2,'Castilla y León'],['Valladolid','VA',2,2,'Castilla y León'],['Segovia','SG',3,2,'Castilla y León'],['Soria','SO',4,2,'Castilla y León'],
-    ['La Rioja','LO',5,2,'Valle del Ebro y País Vasco'],['Zaragoza','Z',6,2,'Valle del Ebro y País Vasco'],['Tarragona','T',8,2,'Cataluña'],['Barcelona','B',9,2,'Cataluña'],
-    ['Salamanca','SA',1,3,'Castilla y León'],['Ávila','AV',2,3,'Castilla y León'],['Madrid','M',3,3,'Centro'],['Guadalajara','GU',4,3,'Centro'],
-    ['Cuenca','CU',5,3,'Centro'],['Teruel','TE',6,3,'Valle del Ebro y País Vasco'],['Castellón','CS',7,3,'Levante y Baleares'],['Illes Balears','PM',9,3,'Levante y Baleares'],
-    ['Cáceres','CC',1,4,'Extremadura'],['Toledo','TO',2,4,'Centro'],['Ciudad Real','CR',3,4,'Centro'],['Albacete','AB',4,4,'Centro'],['Valencia','V',5,4,'Levante y Baleares'],
-    ['Badajoz','BA',1,5,'Extremadura'],['Córdoba','CO',2,5,'Andalucía'],['Jaén','J',3,5,'Andalucía'],['Murcia','MU',4,5,'Sureste'],['Alicante','A',5,5,'Sureste'],
-    ['Huelva','H',1,6,'Andalucía'],['Sevilla','SE',2,6,'Andalucía'],['Granada','GR',3,6,'Andalucía'],['Almería','AL',4,6,'Sureste'],
-    ['Cádiz','CA',2,7,'Andalucía'],['Málaga','MA',3,7,'Andalucía'],
-    ['Las Palmas','GC',7,7,'Canarias'],['Santa Cruz de Tenerife','TF',6,7,'Canarias']
+    ['A Coruña','C',0,0,'B'],['Lugo','LU',1,0,'B'],['Asturias','O',2,0,'B'],['Cantabria','S',3,0,'B'],
+    ['Bizkaia','BI',4,0,'1'],['Gipuzkoa','SS',5,0,'1'],
+    ['Pontevedra','PO',0,1,'B'],['Ourense','OR',1,1,'B'],['León','LE',2,1,'1'],['Palencia','P',3,1,'1'],
+    ['Burgos','BU',4,1,'1'],['Álava','VI',5,1,'1'],['Navarra','NA',6,1,'A'],
+    ['Huesca','HU',7,1,'2'],['Lleida','L',8,1,'2'],['Girona','GI',9,1,'2'],
+    ['Zamora','ZA',1,2,'1'],['Valladolid','VA',2,2,'1'],['Segovia','SG',3,2,'1'],['Soria','SO',4,2,'1'],
+    ['La Rioja','LO',5,2,'A'],['Zaragoza','Z',6,2,'A'],['Tarragona','T',8,2,'2'],['Barcelona','B',9,2,'2'],
+    ['Salamanca','SA',1,3,'1'],['Ávila','AV',2,3,'1'],['Madrid','M',3,3,'1'],['Guadalajara','GU',4,3,'1'],
+    ['Cuenca','CU',5,3,'3'],['Teruel','TE',6,3,'2'],['Castellón','CS',7,3,'9'],['Illes Balears','PM',9,3,'C'],
+    ['Cáceres','CC',1,4,'3'],['Toledo','TO',2,4,'3'],['Ciudad Real','CR',3,4,'3'],['Albacete','AB',4,4,'8'],['Valencia','V',5,4,'4'],
+    ['Badajoz','BA',1,5,'5'],['Córdoba','CO',2,5,'3'],['Jaén','J',3,5,'3'],['Murcia','MU',4,5,'6'],['Alicante','A',5,5,'8'],
+    ['Huelva','H',1,6,'5'],['Sevilla','SE',2,6,'5'],['Granada','GR',3,6,'7'],['Almería','AL',4,6,'7'],
+    ['Cádiz','CA',2,7,'5'],['Málaga','MA',3,7,'7'],
+    ['Las Palmas','GC',7,7,'D'],['Santa Cruz de Tenerife','TF',6,7,'D']
   ];
 
   // Índice del buscador (cultivos, variedades y contenidos)
@@ -206,9 +210,9 @@
     if (!M.p[p[0]]) return;
     var g = document.createElementNS(NS, 'g');
     g.setAttribute('class', 'tile'); g.setAttribute('tabindex', '0'); g.setAttribute('role', 'button');
-    g.setAttribute('aria-label', p[0] + ', zona ' + p[4]); g.dataset.prov = p[0]; g.dataset.zone = p[4];
+    g.setAttribute('aria-label', p[0] + ', ' + zonaLabel(p[4])); g.dataset.prov = p[0]; g.dataset.zone = p[4];
     var path = document.createElementNS(NS, 'path'); path.setAttribute('d', M.p[p[0]]);
-    var title = document.createElementNS(NS, 'title'); title.textContent = p[0] + ' · ' + p[4];
+    var title = document.createElementNS(NS, 'title'); title.textContent = p[0] + ' · ' + zonaLabel(p[4]);
     g.appendChild(title); g.appendChild(path); svg.appendChild(g);
     var t = document.createElementNS(NS, 'text');
     t.setAttribute('x', M.l[p[0]][0]); t.setAttribute('y', M.l[p[0]][1]);
@@ -248,10 +252,15 @@
     }
     var zone = p[4], tec = TECNICOS[zone] || {};
     card.dataset.empty = 'false';
-    $('#techName').textContent = tec.nombre || 'Técnico de zona · ' + zone;
-    $('#techZone').textContent = 'Zona ' + zone + ' · ' + name + (tec.nombre ? '' : ' · te atiende el equipo técnico-comercial');
-    var phone = tec.telefono || CONFIG.defaultPhone;
-    updateContact(phone, tec.telefono ? tec.telefono : CONFIG.defaultPhoneTxt, tec.email || CONFIG.defaultEmail, zone + ' (' + name + ')');
+    if (tec.distribuidor) {
+      $('#techName').textContent = 'Distribuidor · ' + tec.distribuidor;
+      $('#techZone').textContent = name + ' · te atiende nuestro distribuidor ' + tec.distribuidor + ' a través de Bejo Ibérica';
+      updateContact(CONFIG.defaultPhone, CONFIG.defaultPhoneTxt, CONFIG.defaultEmail, tec.distribuidor + ' (' + name + ')');
+    } else {
+      $('#techName').textContent = tec.nombre;
+      $('#techZone').textContent = 'Técnico de zona ' + zone + (tec.especialidad ? ' · ' + tec.especialidad : '') + ' · ' + name;
+      updateContact(tec.telefono, tec.telefonoTxt, tec.email, 'zona ' + zone + ' (' + name + ')');
+    }
     if (fromUser) track('bejo_zona', { provincia: name, zona: zone });
   }
   function updateContact(phone, phoneTxt, email, zoneLabel) {
@@ -331,7 +340,7 @@
     // Sin endpoint: preparar el correo con los datos ya rellenos
     var to = (zone && TECNICOS[zone] && TECNICOS[zone].email) || CONFIG.defaultEmail;
     var body = 'Nombre: ' + data.nombre + '\nCultivo: ' + data.cultivo + '\nContacto: ' + data.contacto +
-      (data.provincia ? '\nProvincia: ' + data.provincia + ' (zona ' + data.zona + ')' : '') +
+      (data.provincia ? '\nProvincia: ' + data.provincia + ' (' + zonaLabel(data.zona) + ')' : '') +
       (data.mensaje ? '\n\nMensaje:\n' + data.mensaje : '');
     window.location.href = 'mailto:' + to + '?subject=' + encodeURIComponent('Consulta técnico de zona – ' + data.cultivo) + '&body=' + encodeURIComponent(body);
     done('Hemos preparado tu consulta en tu aplicación de correo: solo tienes que pulsar «Enviar». Tu técnico de zona te responde en 48 h laborables.');
