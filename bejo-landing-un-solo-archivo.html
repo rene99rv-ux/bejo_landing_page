@@ -916,7 +916,7 @@ var MAPA_PROVINCIAS = {"w":600,"h":467,"inset":[400.4,373.8,191.6,89.2],"p":{"Il
     whatsapp: 'https://wa.me/message/UYOLJTFTJJBNB1'
   };
 
-  // Técnicos por zona (1-9) y distribuidores (A-D) de Bejo Ibérica.
+  // Técnicos por zona (1-9) y distribuidores (A, C, D) de Bejo Ibérica.
   // Los distribuidores no tienen contacto propio en la web: se muestra el contacto central.
   var TECNICOS = {
     '1': { nombre: 'Félix Andrés',        especialidad: 'Especialista en puerro',               telefono: '+34629264656', telefonoTxt: '629 264 656', email: 'f.andres@bejo.es' },
@@ -929,7 +929,6 @@ var MAPA_PROVINCIAS = {"w":600,"h":467,"inset":[400.4,373.8,191.6,89.2],"p":{"Il
     '8': { nombre: 'Miguel Ángel Teruel', especialidad: '',                                     telefono: '+34699923519', telefonoTxt: '699 923 519', email: 'm.teruel@bejo.es' },
     '9': { nombre: 'Luis Carreira',       especialidad: '',                                     telefono: '+34689265594', telefonoTxt: '689 265 594', email: 'l.carreira@bejo.es' },
     'A': { distribuidor: 'Antoñanzas' },
-    'B': { distribuidor: 'Santamarta' },
     'C': { distribuidor: 'Monso' },
     'D': { distribuidor: 'Metal Agrícola' }
   };
@@ -937,15 +936,15 @@ var MAPA_PROVINCIAS = {"w":600,"h":467,"inset":[400.4,373.8,191.6,89.2],"p":{"Il
 
   // Provincias: [nombre, código, columna, fila, zona] — el código es la etiqueta del mapa
   var PROVINCIAS = [
-    ['A Coruña','C',0,0,'B'],['Lugo','LU',1,0,'B'],['Asturias','O',2,0,'B'],['Cantabria','S',3,0,'B'],
+    ['A Coruña','C',0,0,'9'],['Lugo','LU',1,0,'9'],['Asturias','O',2,0,'9'],['Cantabria','S',3,0,'9'],
     ['Bizkaia','BI',4,0,'1'],['Gipuzkoa','SS',5,0,'1'],
-    ['Pontevedra','PO',0,1,'B'],['Ourense','OR',1,1,'B'],['León','LE',2,1,'1'],['Palencia','P',3,1,'1'],
+    ['Pontevedra','PO',0,1,'9'],['Ourense','OR',1,1,'9'],['León','LE',2,1,'1'],['Palencia','P',3,1,'1'],
     ['Burgos','BU',4,1,'1'],['Álava','VI',5,1,'1'],['Navarra','NA',6,1,'A'],
     ['Huesca','HU',7,1,'2'],['Lleida','L',8,1,'2'],['Girona','GI',9,1,'2'],
     ['Zamora','ZA',1,2,'1'],['Valladolid','VA',2,2,'1'],['Segovia','SG',3,2,'1'],['Soria','SO',4,2,'1'],
     ['La Rioja','LO',5,2,'A'],['Zaragoza','Z',6,2,'A'],['Tarragona','T',8,2,'2'],['Barcelona','B',9,2,'2'],
     ['Salamanca','SA',1,3,'1'],['Ávila','AV',2,3,'1'],['Madrid','M',3,3,'1'],['Guadalajara','GU',4,3,'1'],
-    ['Cuenca','CU',5,3,'3'],['Teruel','TE',6,3,'2'],['Castellón','CS',7,3,'9'],['Illes Balears','PM',9,3,'C'],
+    ['Cuenca','CU',5,3,'3'],['Teruel','TE',6,3,'2'],['Castellón','CS',7,3,'4'],['Illes Balears','PM',9,3,'C'],
     ['Cáceres','CC',1,4,'3'],['Toledo','TO',2,4,'3'],['Ciudad Real','CR',3,4,'3'],['Albacete','AB',4,4,'8'],['Valencia','V',5,4,'4'],
     ['Badajoz','BA',1,5,'5'],['Córdoba','CO',2,5,'3'],['Jaén','J',3,5,'3'],['Murcia','MU',4,5,'6'],['Alicante','A',5,5,'8'],
     ['Huelva','H',1,6,'5'],['Sevilla','SE',2,6,'5'],['Granada','GR',3,6,'7'],['Almería','AL',4,6,'7'],
