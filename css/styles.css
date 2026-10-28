@@ -168,6 +168,10 @@ button,input,select,textarea{font:inherit;color:inherit}
 .tag{font-size:13px;font-weight:600;padding:2px 8px;border:1.5px solid var(--green);background:var(--tint-green)}
 .variety h3{font-size:24px}
 .variety p{color:var(--muted)}
+.testimonio{margin:0;padding-left:14px;border-left:3px solid var(--green)}
+.testimonio p{color:var(--ink);font-style:italic}
+.testimonio footer{margin-top:6px;font-size:13px;color:var(--muted)}
+.testimonio-nota{margin-top:16px;font-size:13px;color:var(--muted)}
 .variety dl{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;margin:2px 0 6px;font-size:14px}
 .variety dt{font-weight:600}
 .variety dd{margin:0;color:var(--muted)}
