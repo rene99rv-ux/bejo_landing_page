@@ -910,11 +910,10 @@ var MAPA_PROVINCIAS = {"w":600,"h":467,"inset":[400.4,373.8,191.6,89.2],"p":{"Il
      CONFIGURACIÓN (editar antes de lanzar)
      ------------------------------------------------------------------ */
   var CONFIG = {
-    // Endpoint que recibe el formulario por POST (JSON). Ejemplos:
-    //   Formspree:  'https://formspree.io/f/xxxxxxx'
-    //   CRM/propio: 'https://www.bejo.es/api/contacto'
+    // Endpoint que recibe el formulario por POST (JSON) — FormSubmit envía cada consulta por email.
+    // En el prototipo todas las consultas llegan a un único buzón, indicando el técnico que correspondería.
     // Si se deja vacío, la consulta se prepara en el cliente de correo del usuario.
-    formEndpoint: '',
+    formEndpoint: 'https://formsubmit.co/ajax/irene99rv@hotmail.com',
     defaultEmail: 'info@bejo.es',
     defaultPhone: '+34916587072',
     defaultPhoneTxt: '91 658 70 72',
@@ -1229,8 +1228,23 @@ var MAPA_PROVINCIAS = {"w":600,"h":467,"inset":[400.4,373.8,191.6,89.2],"p":{"Il
 
     if (CONFIG.formEndpoint) {
       btn.disabled = true; btn.textContent = 'Enviando…';
-      fetch(CONFIG.formEndpoint, { method: 'POST', headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }, body: JSON.stringify(data) })
-        .then(function (r) { if (!r.ok) throw new Error(r.status); done('¡Gracias, ' + data.nombre + '! Consulta enviada. Tu técnico de zona te responde en 48 h laborables.'); })
+      var tec = TECNICOS[zone] || {};
+      var payload = {
+        _subject: 'Nueva consulta landing bejo.es – ' + data.cultivo + (prov ? ' – ' + prov : ''),
+        _template: 'table',
+        Nombre: data.nombre, Cultivo: data.cultivo, Contacto: data.contacto,
+        Provincia: prov || 'No indicada',
+        Zona: zone ? zonaLabel(zone) : 'Sin zona',
+        'Técnico asignado': tec.nombre ? tec.nombre + ' (' + tec.email + ')' : (tec.distribuidor ? 'Distribuidor ' + tec.distribuidor : 'Equipo técnico-comercial'),
+        Mensaje: data.mensaje || '—', Origen: data.origen, Fecha: data.fecha
+      };
+      if (/@/.test(data.contacto)) payload._replyto = data.contacto;
+      fetch(CONFIG.formEndpoint, { method: 'POST', headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }, body: JSON.stringify(payload) })
+        .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+        .then(function (res) {
+          if (res && String(res.success) === 'false') throw new Error(res.message || 'no enviado');
+          done('¡Gracias, ' + data.nombre + '! Consulta enviada. Tu técnico de zona te responde en 48 h laborables.');
+        })
         .catch(function () {
           btn.disabled = false; btn.textContent = 'Enviar consulta al técnico';
           errBox.textContent = 'No hemos podido enviar la consulta. Llámanos al ' + CONFIG.defaultPhoneTxt + ' o escríbenos a ' + CONFIG.defaultEmail + '.';
