@@ -144,7 +144,7 @@
       return;
     }
     if (item.href.charAt(0) === '#') { $(item.href).scrollIntoView({ behavior: 'smooth' }); return; }
-    window.location.href = item.href;
+    window.open(item.href, '_blank', 'noopener');
   }
   $$('[data-search]').forEach(function (form) {
     var input = $('input', form), list = $('.search-results', form), results = [], idx = -1;
