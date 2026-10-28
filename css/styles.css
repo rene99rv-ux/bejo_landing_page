@@ -241,15 +241,15 @@ textarea.input{padding:12px 14px;min-height:104px;resize:vertical}
 .map{margin:20px 0}
 .map svg{width:100%;height:auto}
 .map .tile{cursor:pointer}
-.map .tile rect{fill:var(--ph);stroke:var(--surface);stroke-width:2;transition:fill .15s}
-.map .tile text{font-size:11px;font-weight:600;fill:var(--muted);pointer-events:none;text-anchor:middle;dominant-baseline:central}
-.map .tile:hover rect,.map .tile:focus rect{fill:#bfe0b3}
-.map .tile.in-zone rect{fill:#a6d796}
-.map .tile.in-zone text{fill:#0d2a06}
-.map .tile.active rect{fill:var(--green)}
-.map .tile.active text{fill:#000}
+.map .tile path{fill:var(--ph);stroke:var(--surface);stroke-width:1;stroke-linejoin:round;transition:fill .15s}
+.map .tile:hover path,.map .tile:focus path{fill:#bfe0b3}
+.map .tile.in-zone path{fill:#a6d796}
+.map .tile.active path{fill:var(--green)}
 .map .tile:focus{outline:none}
-.map .tile:focus-visible rect{stroke:var(--yellow);stroke-width:3}
+.map .tile:focus-visible path{stroke:var(--yellow);stroke-width:2.5}
+.map-labels text{font-size:9px;font-weight:600;fill:var(--muted);pointer-events:none;text-anchor:middle;dominant-baseline:central}
+.map-labels text.in-zone{fill:#0d2a06}
+.map-labels text.active{fill:#000}
 .map-inset{fill:none;stroke:var(--line);stroke-dasharray:4 3}
 .map-caption{font-size:13px;color:var(--muted);margin-top:6px}
 

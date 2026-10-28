@@ -26,6 +26,7 @@ Propuesta de nueva página de inicio para [www.bejo.es](https://www.bejo.es), de
 index.html      Estructura y contenidos
 css/styles.css  Estilos (tokens de marca, retícula, responsive)
 js/main.js      Menú, buscador, mapa de zonas, formulario, analítica
+js/mapa-provincias.js  Fronteras simplificadas de las 50 provincias para el mapa
 ```
 
 ## Antes de lanzar

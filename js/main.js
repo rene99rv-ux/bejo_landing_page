@@ -34,7 +34,7 @@
     'Canarias':                    { nombre: '', telefono: '', email: '' }
   };
 
-  // Provincias: [nombre, código, columna, fila, zona] — columna/fila para el mapa de teselas
+  // Provincias: [nombre, código, columna, fila, zona] — el código es la etiqueta del mapa
   var PROVINCIAS = [
     ['A Coruña','C',0,0,'Noroeste'],['Lugo','LU',1,0,'Noroeste'],['Asturias','O',2,0,'Noroeste'],['Cantabria','S',3,0,'Noroeste'],
     ['Bizkaia','BI',4,0,'Valle del Ebro y País Vasco'],['Gipuzkoa','SS',5,0,'Valle del Ebro y País Vasco'],
@@ -178,7 +178,7 @@
   });
 
   /* ------------------------------------------------------------------
-     Técnico de zona: selector de provincia + mapa de teselas
+     Técnico de zona: selector de provincia + mapa de provincias
      ------------------------------------------------------------------ */
   var zoneSel = $('#zoneSelect'), formSel = $('#f-prov');
   var byName = {};
@@ -189,30 +189,33 @@
     });
   });
 
-  // Mapa SVG
-  var S = 40, G = 4, NS = 'http://www.w3.org/2000/svg';
+  // Mapa SVG con las fronteras reales de las 50 provincias (datos en js/mapa-provincias.js)
+  var NS = 'http://www.w3.org/2000/svg', M = window.MAPA_PROVINCIAS;
   var svg = document.createElementNS(NS, 'svg');
-  svg.setAttribute('viewBox', '0 0 ' + (10 * (S + G)) + ' ' + (8 * (S + G)));
+  svg.setAttribute('viewBox', '0 0 ' + M.w + ' ' + M.h);
   svg.setAttribute('role', 'group');
-  svg.setAttribute('aria-label', 'Provincias de España agrupadas por zona técnica');
+  svg.setAttribute('aria-label', 'Mapa de España por provincias, agrupadas por zona técnica');
   var inset = document.createElementNS(NS, 'rect');
   inset.setAttribute('class', 'map-inset');
-  inset.setAttribute('x', 6 * (S + G) - 4); inset.setAttribute('y', 7 * (S + G) - 4);
-  inset.setAttribute('width', 2 * (S + G) + 4); inset.setAttribute('height', S + 8);
+  inset.setAttribute('x', M.inset[0]); inset.setAttribute('y', M.inset[1]);
+  inset.setAttribute('width', M.inset[2]); inset.setAttribute('height', M.inset[3]);
   svg.appendChild(inset);
+  var labels = document.createElementNS(NS, 'g');
+  labels.setAttribute('class', 'map-labels'); labels.setAttribute('aria-hidden', 'true');
   PROVINCIAS.forEach(function (p) {
+    if (!M.p[p[0]]) return;
     var g = document.createElementNS(NS, 'g');
     g.setAttribute('class', 'tile'); g.setAttribute('tabindex', '0'); g.setAttribute('role', 'button');
     g.setAttribute('aria-label', p[0] + ', zona ' + p[4]); g.dataset.prov = p[0]; g.dataset.zone = p[4];
-    var r = document.createElementNS(NS, 'rect');
-    r.setAttribute('x', p[2] * (S + G)); r.setAttribute('y', p[3] * (S + G));
-    r.setAttribute('width', S); r.setAttribute('height', S); r.setAttribute('rx', 3);
-    var t = document.createElementNS(NS, 'text');
-    t.setAttribute('x', p[2] * (S + G) + S / 2); t.setAttribute('y', p[3] * (S + G) + S / 2);
-    t.textContent = p[1];
+    var path = document.createElementNS(NS, 'path'); path.setAttribute('d', M.p[p[0]]);
     var title = document.createElementNS(NS, 'title'); title.textContent = p[0] + ' · ' + p[4];
-    g.appendChild(title); g.appendChild(r); g.appendChild(t); svg.appendChild(g);
+    g.appendChild(title); g.appendChild(path); svg.appendChild(g);
+    var t = document.createElementNS(NS, 'text');
+    t.setAttribute('x', M.l[p[0]][0]); t.setAttribute('y', M.l[p[0]][1]);
+    t.dataset.prov = p[0]; t.dataset.zone = p[4]; t.textContent = p[1];
+    labels.appendChild(t);
   });
+  svg.appendChild(labels);
   var mapBox = $('#map'); mapBox.appendChild(svg);
   var cap = document.createElement('p'); cap.className = 'map-caption'; cap.textContent = 'Pulsa tu provincia en el mapa o elígela en la lista.';
   mapBox.appendChild(cap);
@@ -229,6 +232,12 @@
       g.classList.toggle('active', !!p && g.dataset.prov === name);
       g.classList.toggle('in-zone', !!p && g.dataset.zone === p[4] && g.dataset.prov !== name);
     });
+    $$('.map-labels text', svg).forEach(function (t) {
+      t.classList.toggle('active', !!p && t.dataset.prov === name);
+      t.classList.toggle('in-zone', !!p && t.dataset.zone === p[4] && t.dataset.prov !== name);
+    });
+    // La provincia elegida pasa al frente para que su borde no quede tapado
+    var act = $('.tile.active', svg); if (act) svg.insertBefore(act, labels);
     var card = $('#techCard');
     if (!p) {
       card.dataset.empty = 'true';
